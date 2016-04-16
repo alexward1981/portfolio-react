@@ -159,7 +159,14 @@ gulp.task('processHTML', function() {
     .pipe(gulp.dest('dist'))
 });
 
-var prodBuild = ['clean', 'styles','extrastyles','scripts','images','processHTML', 'notify'],
+// Move robots.txt to site root
+gulp.task('robots', function() {
+  'use strict';
+  return gulp.src('robots.txt')
+    .pipe(gulp.dest('dist'))
+});
+
+var prodBuild = ['clean', 'styles','extrastyles','scripts','images','processHTML', 'robots', 'notify'],
     devBuild = ['styles','extrastyles','processHTML','scripts', 'notify'],
     buildTasks = argv.prod ? prodBuild : devBuild;
 

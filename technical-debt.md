@@ -8,6 +8,7 @@ Any development tasks or optimisations which need to be made should be listed he
 
 ## Tasks:
 1. Set up tests (jasmine and casperjs/spooky)
+2. Continue redux tutorial from https://youtu.be/NKFFDJ3Bmho?t=555
 
 ## Issues
 1. Components don't load data very quickly. The state is undefined for a second until the api call has completed. I need to work out how to stop actions firing until that happens.

@@ -1,4 +1,5 @@
 import { EventEmitter } from "events";
+import { createStore } from "redux";
 
 import dispatcher from "../src/scripts/dispatcher";
 
