@@ -1,11 +1,11 @@
 {
-  "name": "E-Claims",
+  "name": "alexward-portfolio",
   "version": "0.0.1",
   "engines": {
     "node": "0.12.7",
     "npm": "2.11.3"
   },
-  "description": "The e-claims website",
+  "description": "The personal website of Alexander Ward",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -36,16 +36,13 @@
     "gulp-concat": "^2.4.3",
     "gulp-cssnano": "latest",
     "gulp-csso": "latest",
-    "gulp-data": "latest",
     "gulp-eslint": "latest",
     "gulp-ext-replace": "^0.2.0",
     "gulp-header": "^1.7.1",
     "gulp-if": "^2.0.0",
     "gulp-imagemin": "latest",
-    "gulp-jsonlint": "^1.1.2",
     "gulp-merge-media-queries": "^0.2.1",
     "gulp-notify": "^2.2.0",
-    "gulp-nunjucks-html": "^2.0.0",
     "gulp-plumber": "^0.6.6",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-strip-debug": "^1.0.2",
@@ -56,7 +53,6 @@
     "imagemin-pngquant": "latest",
     "jasmine-core": "^2.4.1",
     "jeet": "^6.1.2",
-    "jsoneditor": "^5.1.5",
     "karma": "^0.13.21",
     "karma-jasmine": "^0.3.7",
     "karma-phantomjs-launcher": "^1.0.0",

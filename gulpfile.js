@@ -3,7 +3,6 @@ var gulp        = require('gulp'),
     gutil       = require('gulp-util'),
     chalk       = require('chalk'),
     argv        = require('yargs').argv,
-    fs          = require('fs'),
     browserSync = require('browser-sync'),
     addsrc      = require('gulp-add-src'),
     concat      = require('gulp-concat'),
@@ -12,20 +11,15 @@ var gulp        = require('gulp'),
     plumber     = require('gulp-plumber'),
     notifier    = require('node-notifier'),
     cssnano     = require('gulp-cssnano'),
-    jsonlint    = require('gulp-jsonlint'),
     eslint      = require('gulp-eslint'),
     del         = require('del'),
     stylus      = require('gulp-stylus'),
     jeet        = require('jeet'),
     rupture     = require('rupture'),
     csso        = require('gulp-csso'),
-    extReplace  = require('gulp-ext-replace'),
     runSequence = require('run-sequence'),
     uglify      = require('gulp-uglify'),
     cmq         = require('gulp-merge-media-queries'),
-    nunjucks    = require('gulp-nunjucks-html'),
-    path        = require('path'),
-    data        = require('gulp-data'),
     webpack     = require('webpack-stream'),
     WebpackDevServer = require('webpack-dev-server'),
     reload      = browserSync.reload;
@@ -127,7 +121,7 @@ gulp.task('extrastyles', function(callback) {
 // Combine JS
 gulp.task('scripts', function() {
   'use strict';
-  return gulp.src('src/scripts/app.jsx')
+  return gulp.src('src/scripts/app.js')
     .pipe(plumber(
       { errorHandler: onError }
     ))

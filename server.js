@@ -30,16 +30,12 @@ router.get('/', function(req, res) {
 });
 
 // Load in our routers
-var NavRoute = require('./router/navRoute');
 var LangRoute = require('./router/langRoute');
-var ConfigRoute = require('./router/configRoute');
 
 // REGISTER OUR ROUTES -------------------------------
 // all of our routes will be prefixed with /api
 app.use('/api', router);
-app.use('/api', NavRoute);
 app.use('/api', LangRoute);
-app.use('/api', ConfigRoute);
 
 // START THE SERVER
 // =============================================================================
@@ -48,4 +44,4 @@ console.log('The api is running on port: ' + port);
 
 
 // Setup
-mongoose.connect('mongodb://localhost:27017/e-claims')
+mongoose.connect('mongodb://localhost:27017/portfolio')
