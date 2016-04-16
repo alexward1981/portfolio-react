@@ -1,18 +1,34 @@
 import React from 'react';
 import DocumentMeta from 'react-document-meta';
+import { Link } from 'react-router';
+
+import * as PagesActions from '../../../actions/pagesActions';
+import PagesStore from '../../../stores/pagesStore';
 
 export default class Index extends React.Component {
+  constructor(props) {
+    super();
+    this.state = {
+      pages: PagesStore.getAll()
+    }
+  }
+
+  componentWillMount() {
+    PagesActions.loadPages('home');
+    PagesStore.on("change", () => {
+      this.setState({
+        pages: PagesStore.getAll()
+      })
+    })
+  }
+
   render() {
+    console.log(this.props.status)
+    const { pages } = this.state;
     const meta = {
-      title: 'Some Meta Title',
-      description: 'I am a description, and I can create multiple tags',
-      canonical: 'http://example.com/path/to/page',
-      meta: {
-        charset: 'utf-8',
-        name: {
-          keywords: 'react,meta,document,html,tags'
-        }
-      }
+      title: pages.title,
+      description: pages.description,
+      canonical: pages.canonical,
     }
     return(
       <section class="page-login">

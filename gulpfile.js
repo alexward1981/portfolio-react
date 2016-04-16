@@ -160,7 +160,7 @@ gulp.task('processHTML', function() {
 });
 
 var prodBuild = ['clean', 'styles','extrastyles','scripts','images','processHTML', 'notify'],
-    devBuild = ['styles','extrastyles','libs','processHTML','scripts', 'notify'],
+    devBuild = ['styles','extrastyles','processHTML','scripts', 'notify'],
     buildTasks = argv.prod ? prodBuild : devBuild;
 
 // Perform Basic Build (note, don't call directly, use build:dev or build)
