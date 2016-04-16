@@ -10,19 +10,20 @@ ff-body()
   }
 button()
   display: inline-block;
-  color: $white;
-  background: $button-colour;
+  color: #fff;
+  background: $buttonColor;
   padding: $vspacing $hspacing*2
   border: 0;
   font-size: $smallCopy;
   cursor: pointer;
-  border-bottom: 3px solid darken($button-colour, 40%);
+  border-bottom: 3px solid darken($buttonColor, 40%);
   &:hover {
-    background: $green;
+    background: 3px solid darken($buttonColor, 40%);
+    border-bottom: $buttonColor;
   }
   &.disabled {
     cursor: auto;
-    background: desaturate($button-colour, 60%);
+    background: desaturate($buttonColor, 60%);
     opacity: .6;
   }
 

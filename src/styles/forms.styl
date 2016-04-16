@@ -20,19 +20,12 @@ form {
 
 .field-group {
   @extend .field-container;
-  border-top: 1px solid $grey-1;
-  border-bottom: 1px solid $grey-1;
   +above(m) {
     width: 100%;
   }
   legend {
     font-size: $mantle;
     padding: $vspacing 0;
-  }
-  .group {
-    &:nth-child(even) {
-      margin-top: 1px dotted $grey-1;
-    }
   }
 }
 
@@ -48,14 +41,12 @@ label {
 }
 
 input, textarea, select {
-  background: $white;
-  border: 2px solid $grey-1;
+  background: #fff;
   padding: $spacing;
   width:100%;
   font-size: $smallCopy
   &:focus {
     outline: 0;
-    border-color: $focus-colour;
   }
 }
 
@@ -66,21 +57,16 @@ button {
 
 .radio-group {
   display: inline-block;
-  background: $panel-colour;
   padding: $vspacing*1.5 $hspacing*2;
   margin-right: $hspacing;
-  border: 3px solid $panel-colour;
   font-weight: normal;
   input {
     width: auto;
     margin-right: $hspacing
   }
-  &.focus {
-    border-color: $focus-colour
-  }
   &.selected {
-    background: $white;
-    box-shadow: inset 0 0 0 1px $black
+    background: #fff;
+    box-shadow: inset 0 0 0 1px #000
   }
 }
 .error {
