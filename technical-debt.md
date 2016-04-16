@@ -1,4 +1,4 @@
-47# Technical Debt
+# Technical Debt
 [![Build Status](https://travis-ci.org/alexward1981/portfolio-react.svg?branch=master)](https://travis-ci.org/alexward1981/portfolio-react)
 [![Dependency Status](https://gemnasium.com/alexward1981/portfolio-react.svg)](https://gemnasium.com/alexward1981/portfolio-react)
 
