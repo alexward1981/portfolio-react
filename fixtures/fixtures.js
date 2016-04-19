@@ -1,4 +1,19 @@
 /**
+ * Config fixture
+ *
+ * @language {string} the language of the content
+ * @definitions {object} the container for the language definitions
+ * Anything within the definitions object are static text strings for fixed parts of the site (eg, header, footer, etc...)
+ *
+ **/
+
+exports.config = [{
+	language: 'en-gb',
+  status: 'available',
+  statusText: 'Available from 2nd May 2016'
+}];
+
+/**
  * Language fixture
  *
  * @language {string} the language of the content

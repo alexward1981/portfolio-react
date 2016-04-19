@@ -1,40 +1,39 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import DocumentMeta from 'react-document-meta';
-import { Link } from 'react-router';
+import { connect } from 'react-redux';
+import { configLoad } from '../../scripts/actions';
 
-import * as PagesActions from '../../../actions/pagesActions';
-import PagesStore from '../../../stores/pagesStore';
 
 export default class Index extends React.Component {
-  constructor(props) {
-    super();
-    this.state = {
-      pages: PagesStore.getAll()
-    }
-  }
-
-  componentWillMount() {
-    PagesActions.loadPages('home');
-    PagesStore.on("change", () => {
-      this.setState({
-        pages: PagesStore.getAll()
-      })
-    })
+  componentDidMount() {
+    const { dispatch } = this.props;
+    dispatch(configLoad());
   }
 
   render() {
-    console.log(this.props.status)
-    const { pages } = this.state;
+    const { config, isFetching } = this.props
     const meta = {
-      title: pages.title,
-      description: pages.description,
-      canonical: pages.canonical,
+      title: 'pages.title',
+      description: 'pages.description',
+      canonical: 'pages.canonical',
     }
+
+    var sectionClasses = 'landing ' + config.items.status;
+
     return(
-      <section class="page-login">
+      <section class={ sectionClasses }>
         <DocumentMeta {...meta} />
         <h1>Welcome!</h1>
       </section>
     )
   }
 }
+
+function select(state) {
+  const { config } = state;
+  return {
+    config
+  };
+}
+
+export default connect(select)(Index);

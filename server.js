@@ -30,6 +30,7 @@ router.get('/', function(req, res) {
 });
 
 // Load in our routers
+var ConfigRoute = require('./router/configRoute');
 var LangRoute = require('./router/langRoute');
 var SocialLinkRoute = require('./router/socialLinkRoute');
 var PagesRoute = require('./router/pagesRoute');
@@ -37,6 +38,7 @@ var PagesRoute = require('./router/pagesRoute');
 // REGISTER OUR ROUTES -------------------------------
 // all of our routes will be prefixed with /api
 app.use('/api', router);
+app.use('/api', ConfigRoute);
 app.use('/api', LangRoute);
 app.use('/api', SocialLinkRoute);
 app.use('/api', PagesRoute);

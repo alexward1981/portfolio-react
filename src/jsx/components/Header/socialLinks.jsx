@@ -1,25 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import * as SocialLinkActions from '../../../../actions/socialLinkActions';
-import SocialLinkStore from '../../../../stores/socialLinkStore';
-
 export default class SocialLinks extends React.Component {
   constructor(props) {
     super();
-    this.state = {
-      socialLinks: SocialLinkStore.getAll()
-    }
-  }
-
-  componentWillMount() {
-    SocialLinkActions.loadLinks();
-    SocialLinkStore.on("change", () => {
-      this.setState({
-        socialLinks: SocialLinkStore.getAll()
-      })
-    })
-
   }
 
   render() {

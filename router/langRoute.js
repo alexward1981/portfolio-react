@@ -3,7 +3,6 @@
 module.exports = (function() {
   'use strict';
   var express = require('express'),
-      app = express(),
       router = express.Router();
 
   // Pull in our model

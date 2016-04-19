@@ -1,19 +1,20 @@
-import { combineReducers } from 'redux';
 import Immutable from 'seamless-immutable';
+import { combineReducers } from 'redux';
+import { routerReducer } from 'react-router-redux';
 
 // Import actions
-import { REQUEST_CONFIG, GET_CONFIG, REQUEST_CONFIG, REQUEST_LANG, GET_LANG, REQUEST_LANG, REQUEST_PAGES, GET_PAGES, REQUEST_PAGES, REQUEST_SOCIAL_LINKS, GET_SOCIAL_LINKS, REQUEST_SOCIAL_LINKS } from './actions';
+import { REQUEST_CONFIG, GET_CONFIG } from './actions';
 
 const configInitialState = Immutable({
   items: [],
   isFetching: false
 })
 
-export function config(state = configInitialStatem action) {
+export function config(state = configInitialState, action) {
   switch (action.type) {
     case GET_CONFIG :
       return Immutable(state).merge({
-        items: action.payload.config,
+        items: action.payload.config[0],
         isFetching: false
       })
     case REQUEST_CONFIG :
@@ -26,7 +27,8 @@ export function config(state = configInitialStatem action) {
 }
 
 const rootReducer = combineReducers({
-  config
-})
+  config,
+  routing: routerReducer
+});
 
 export default rootReducer;
