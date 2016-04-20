@@ -10,6 +10,7 @@ import rootReducer from './reducer';
 
 import Layout from '../jsx/layouts/Layout.jsx';
 import Index from '../jsx/pages/Index.jsx';
+import Skills from '../jsx/pages/Skills.jsx';
 
 const store = createStore(
   rootReducer,
@@ -25,6 +26,7 @@ ReactDOM.render(
     <Router history={history}>
      <Route path="/" component={Layout}>
        <IndexRoute component={Index}></IndexRoute>
+       <Route path="skills" component={Skills}></Route>
      </Route>
     </Router>
   </Provider>,

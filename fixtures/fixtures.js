@@ -8,7 +8,6 @@
  **/
 
 exports.config = [{
-	language: 'en-gb',
   status: 'available',
   statusText: 'Available from 2nd May 2016'
 }];
@@ -26,7 +25,7 @@ exports.lang = [{
 	language: 'en-gb',
   definitions: {
   	mobileMenuLabel: 'menu',
-  	siteTitle: 'Alexander Ward'
+    copyright: '© 2016 BBQ Digital Limited'
   }
 }];
 
@@ -97,8 +96,8 @@ exports.socialLinks = [
 exports.pages = [
   {
     'name' : 'home',
-    'title' : '[status]',
-    'description' : 'I am a highly skilled and experienced front-end architect and designer currently contracting in London, UK',
+    'title' : 'Alex Ward | Consultant UI Architect and Writer from London',
+    'description' : 'I am a highly skilled and experienced front-end architect, designer and writer currently contracting in London, UK',
     'slug' : '',
     'inNav' : 'header',
     'parent' : '',

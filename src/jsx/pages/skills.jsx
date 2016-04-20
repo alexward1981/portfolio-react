@@ -4,11 +4,11 @@ import { connect } from 'react-redux';
 import { configLoad, pagesLoad } from '../../scripts/actions';
 
 
-export default class Index extends React.Component {
+export default class Skills extends React.Component {
   componentWillMount() {
     const { dispatch } = this.props;
     dispatch(configLoad());
-    dispatch(pagesLoad('home'));
+    dispatch(pagesLoad('skills'));
   }
 
   render() {
@@ -22,22 +22,14 @@ export default class Index extends React.Component {
       canonical: pagesItems.canonical,
     }
 
-    var sectionClasses = 'landing ' + configItems.status;
-    if(isFetching) {
-      return(
-        <section class="loader">
-          <span>Content is loading...</span>
-        </section>
-      )
-    } else {
-      return(
-        <section class={ sectionClasses }>
-          <DocumentMeta {...meta} />
-          <h1>Welcome!</h1>
-        </section>
-      )
-    }
+    var sectionClasses = 'skills ' + configItems.status;
 
+    return(
+      <section class={ sectionClasses }>
+        <DocumentMeta {...meta} />
+        <h1>Welcome!</h1>
+      </section>
+    )
   }
 }
 
@@ -49,4 +41,4 @@ function select(state) {
   };
 }
 
-export default connect(select)(Index);
+export default connect(select)(Skills);

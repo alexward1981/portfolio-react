@@ -15,13 +15,25 @@ module.exports = (function() {
       res.json({ message: 'Error: No page selected' });
     });
 
-  router.route('/pages/:page')
-    .get(function(req, res) {
-      Model.findOne({name: req.params.page}, function(err, item) {
-        if (err)
-          res.send(err);
-        res.json(item);
-      });
-    })
+    router.route('/pages/all')
+      .get(function(req, res) {
+        Model.find(function(err, item) {
+          if (err) {
+            res.send(err);
+          }
+          res.json(item);
+        });
+      })
+
+    router.route('/pages/:page')
+      .get(function(req, res) {
+        Model.findOne({name: req.params.page}, function(err, item) {
+          if (err) {
+            res.send(err);
+          }
+          res.json(item);
+        });
+      })
+
   return router;
 })();

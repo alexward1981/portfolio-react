@@ -8,7 +8,7 @@ Any development tasks or optimisations which need to be made should be listed he
 
 ## Tasks:
 1. Set up tests (jasmine and casperjs/spooky)
-2. Continue redux tutorial from https://youtu.be/NKFFDJ3Bmho?t=555
 
 ## Issues
-1. Components don't load data very quickly. The state is undefined for a second until the api call has completed. I need to work out how to stop actions firing until that happens.
+1. Components seem to be loading data in multiple times. The issue is being tracked at http://stackoverflow.com/questions/36742775/getting-cannot-read-property-asmutable-of-undefined-error-even-though-the-pa/36744491#36744491
+2. The errors seem to be causing code failures. Nothing past the header nav will load. In fact I can't even get a console.log() in the header itself to fire. This needs investigation.

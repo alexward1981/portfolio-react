@@ -12,6 +12,8 @@ export const REQUEST_PAGES = 'REQUEST_PAGES';
 export const GET_PAGES = 'GET_PAGES';
 export const REQUEST_SOCIAL_LINKS = 'REQUEST_SOCIAL_LINKS';
 export const GET_SOCIAL_LINKS = 'GET_SOCIAL_LINKS';
+export const REQUEST_NAV = 'REQUEST_SOCIAL_LINKS';
+export const GET_NAV = 'GET_SOCIAL_LINKS';
 
 // Config
 export function requestConfig() {
@@ -30,13 +32,97 @@ export function getConfig(json) {
   };
 }
 
-//Config thunk actions
+// thunk actions
 export function configLoad() {
   return dispatch => {
     dispatch(requestConfig());
     return axios.get(API_ROOT + 'config')
       .then(function(response) {
         dispatch(getConfig(response.data))
+      })
+  }
+}
+
+// Pages
+export function requestPages() {
+  return {
+    type: REQUEST_PAGES
+  };
+}
+
+export function getPages(json) {
+  return {
+    type: GET_PAGES,
+    payload: {
+      pages: json,
+      receivedAt: Date.now()
+    }
+  };
+}
+
+// thunk actions
+export function pagesLoad(slug) {
+  return dispatch => {
+    dispatch(requestPages());
+    return axios.get(API_ROOT + 'pages/'+ slug)
+      .then(function(response) {
+        dispatch(getPages(response.data))
+      })
+  }
+}
+
+// Nav
+export function requestNav() {
+  return {
+    type: REQUEST_NAV
+  };
+}
+
+export function getNav(json) {
+  return {
+    type: GET_NAV,
+    payload: {
+      nav: json,
+      receivedAt: Date.now()
+    }
+  };
+}
+
+// thunk actions
+export function navLoad() {
+  return dispatch => {
+    dispatch(requestNav());
+    return axios.get(API_ROOT + 'pages/all')
+      .then(function(response) {
+        dispatch(getNav(response.data))
+      })
+  }
+}
+
+// Social Links
+export function requestSocialLinks() {
+  return {
+    type: REQUEST_SOCIAL_LINKS
+  };
+}
+
+export function getSocialLinks(json) {
+  return {
+    type: GET_SOCIAL_LINKS,
+    payload: {
+      socialLinks: json,
+      receivedAt: Date.now()
+    }
+  };
+}
+
+// thunk actions
+export function socialLinksLoad() {
+  return dispatch => {
+    dispatch(requestSocialLinks());
+    return axios.get(API_ROOT + 'socialLinks')
+      .then(function(response) {
+        dispatch(getSocialLinks(response.data))
       })
   }
 }
