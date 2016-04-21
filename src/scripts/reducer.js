@@ -14,27 +14,12 @@ import {
   GET_NAV
 } from './actions';
 
-const configInitialState = Immutable({
+const initialState = Immutable({
   items: [],
   isFetching: false
 })
 
-const pagesInitialState = Immutable({
-  items: [],
-  isFetching: false
-})
-
-const socialLinksInitialState = Immutable({
-  items: [],
-  isFetching: false
-})
-
-const navInitialState = Immutable({
-  items: [],
-  isFetching: false
-})
-
-export function config(state = configInitialState, action) {
+export function config(state = initialState, action) {
   switch (action.type) {
     case GET_CONFIG :
       return Immutable(state).merge({
@@ -50,7 +35,7 @@ export function config(state = configInitialState, action) {
   }
 }
 
-export function pages(state = pagesInitialState, action) {
+export function pages(state = initialState, action) {
   switch (action.type) {
     case GET_PAGES :
       return Immutable(state).merge({
@@ -66,7 +51,7 @@ export function pages(state = pagesInitialState, action) {
   }
 }
 
-export function socialLinks(state = socialLinksInitialState, action) {
+export function socialLinks(state = initialState, action) {
   switch (action.type) {
     case GET_SOCIAL_LINKS :
       return Immutable(state).merge({
@@ -82,23 +67,7 @@ export function socialLinks(state = socialLinksInitialState, action) {
   }
 }
 
-export function pages(state = pagesInitialState, action) {
-  switch (action.type) {
-    case GET_PAGES :
-      return Immutable(state).merge({
-        items: action.payload.pages,
-        isFetching: false
-      })
-    case REQUEST_PAGES :
-      return Immutable(state).merge({
-        isFetching: true
-      })
-    default:
-      return state;
-  }
-}
-
-export function nav(state = navInitialState, action) {
+export function nav(state = initialState, action) {
   switch (action.type) {
     case GET_NAV :
       return Immutable(state).merge({

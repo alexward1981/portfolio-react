@@ -10,16 +10,13 @@ export default class HeaderNav extends React.Component {
   }
 
   render() {
-    const { nav, isFetching } = this.props;
-    console.log(nav)
-    if(nav !== undefined) {
-      const navitems = nav.items.asMutable().map((item) => {
-        if(item.inNav === 'header') {
-          return <li key={item._id}><Link to={item.slug}>{item.name}</Link></li>
-        }
-      });
-    }
-    if(isFetching) {
+    const { nav } = this.props;
+    const navitems = nav && nav.items ? nav.items.asMutable().map((item) => {
+      if(item.inNav === 'header' || item.inNav === 'both') {
+        return <li key={item._id}><Link to={item.slug}>{item.name}</Link></li>
+      }
+    }) : null;
+    if(nav.isFetching) {
       return(
         <section class="loader">
           <span>Content is loading...</span>

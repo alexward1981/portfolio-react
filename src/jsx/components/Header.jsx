@@ -4,7 +4,6 @@ import SocialLinks from './Header/socialLinks.jsx';
 
 export default class Header extends React.Component {
   render() {
-    //const { lang } = this.state;
     return(
       <header class="c-global-header" role="banner">
         <HeaderNav />

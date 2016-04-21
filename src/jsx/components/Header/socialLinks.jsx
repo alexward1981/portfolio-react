@@ -9,12 +9,12 @@ export default class SocialLinks extends React.Component {
   }
 
   render() {
-    const { socialLinks, isFetching } = this.props;
+    const { socialLinks } = this.props;
     const faString = 'fa ';
-    const slComponents = socialLinks.items.asMutable().map((slItem) => {
-      return <li key={slItem._id}><a class={faString + slItem.class} title={slItem.title} href={slItem.link}>{slItem.label}</a></li>
-    });
-    if(isFetching) {
+    const slComponents = socialLinks && socialLinks.items ? socialLinks.items.asMutable().map((item) => {
+      return <li key={item._id}><a class={faString + item.class} title={item.title} href={item.link}>{item.label}</a></li>
+    }) : null;
+    if(socialLinks.isFetching) {
       return(
         <section class="loader">
           <span>Content is loading...</span>

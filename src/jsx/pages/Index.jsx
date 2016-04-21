@@ -13,9 +13,9 @@ export default class Index extends React.Component {
 
   render() {
     const { config, pages, isFetching } = this.props
+
     const configItems = config.items;
     const pagesItems = pages.items;
-
     const meta = {
       title: '[' + configItems.status + '] ' + pagesItems.title,
       description: pagesItems.description,

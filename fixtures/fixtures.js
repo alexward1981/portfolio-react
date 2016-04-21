@@ -99,7 +99,7 @@ exports.pages = [
     'title' : 'Alex Ward | Consultant UI Architect and Writer from London',
     'description' : 'I am a highly skilled and experienced front-end architect, designer and writer currently contracting in London, UK',
     'slug' : '',
-    'inNav' : 'header',
+    'inNav' : 'both',
     'parent' : '',
     'canonical' : '',
     'class' : 'home'
@@ -109,7 +109,7 @@ exports.pages = [
     'title' : 'About me',
     'description' : 'A little bit of information about Alex Ward',
     'slug' : 'about-me',
-    'inNav' : 'header',
+    'inNav' : 'both',
     'parent' : '',
     'canonical' : '',
     'class' : 'about'
@@ -119,7 +119,7 @@ exports.pages = [
     'title' : 'Skills',
     'description' : 'The skills and abilities of Alex Ward',
     'slug' : 'skills',
-    'inNav' : 'header',
+    'inNav' : 'both',
     'parent' : '',
     'canonical' : '',
     'class' : 'skills'

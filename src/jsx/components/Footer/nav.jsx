@@ -10,13 +10,13 @@ export default class FooterNav extends React.Component {
   }
 
   render() {
-    const { nav, isFetching } = this.props;
-    const navitems = nav.items.asMutable().map((item) => {
-      if(item.inNav === 'header') {
+    const { nav } = this.props;
+    const navitems = nav && nav.items ? nav.items.asMutable().map((item) => {
+      if(item.inNav === 'footer' || item.inNav === 'both') {
         return <li key={item._id}><Link to={item.slug}>{item.name}</Link></li>
       }
-    });
-    if(isFetching) {
+    }) : null;
+    if(nav.isFetching) {
       return(
         <section class="loader">
           <span>Content is loading...</span>
