@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import { navLoad } from '../../../scripts/actions';
 
-export default class FooterNav extends React.Component {
+export class FooterNav extends React.Component {
   componentWillMount() {
     const { dispatch } = this.props;
     dispatch(navLoad());

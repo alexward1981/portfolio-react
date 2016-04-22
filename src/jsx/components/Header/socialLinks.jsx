@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { socialLinksLoad } from '../../../scripts/actions';
 
-export default class SocialLinks extends React.Component {
+export class SocialLinks extends React.Component {
   componentWillMount() {
     const { dispatch } = this.props;
     dispatch(socialLinksLoad());

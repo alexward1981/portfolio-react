@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { configLoad, pagesLoad } from '../../scripts/actions';
 
 
-export default class Index extends React.Component {
+export class Index extends React.Component {
   componentWillMount() {
     const { dispatch } = this.props;
     dispatch(configLoad());
