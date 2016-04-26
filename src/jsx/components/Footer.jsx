@@ -1,12 +1,12 @@
 import React from 'react';
-import FooterNav from './Footer/nav.jsx'
+import Navigation from './nav.jsx'
 
 export default class Footer extends React.Component {
   render() {
     return(
       <footer class="c-global-footer">
         <div class="wrapper">
-          <FooterNav />
+          <Navigation postion="footer" />
           <div class="copyright">
             <a href="/">
               Copyright 2016

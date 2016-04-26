@@ -9,7 +9,7 @@ export class SocialLinks extends React.Component {
   }
 
   render() {
-    const { socialLinks } = this.props;
+    const socialLinks = this.props.socialLinks;
     const faString = 'fa ';
     const slComponents = socialLinks && socialLinks.items ? socialLinks.items.asMutable().map((item) => {
       return <li key={item._id}><a class={faString + item.class} title={item.title} href={item.link}>{item.label}</a></li>
