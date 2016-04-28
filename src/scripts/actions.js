@@ -12,8 +12,8 @@ export const REQUEST_PAGES = 'REQUEST_PAGES';
 export const GET_PAGES = 'GET_PAGES';
 export const REQUEST_SOCIAL_LINKS = 'REQUEST_SOCIAL_LINKS';
 export const GET_SOCIAL_LINKS = 'GET_SOCIAL_LINKS';
-export const REQUEST_NAV = 'REQUEST_SOCIAL_LINKS';
-export const GET_NAV = 'GET_SOCIAL_LINKS';
+export const REQUEST_NAV = 'REQUEST_NAV';
+export const GET_NAV = 'GET_NAV';
 
 // Config
 export function requestConfig() {
