@@ -3,6 +3,7 @@ import DocumentMeta from 'react-document-meta';
 import { connect } from 'react-redux';
 import { configLoad, pagesLoad } from '../../scripts/actions';
 import PageContent from '../components/PageContent.jsx';
+import Availability from '../components/Availability.jsx';
 
 export class Index extends React.Component {
   componentWillMount() {
@@ -35,6 +36,8 @@ export class Index extends React.Component {
         <section class={ sectionClasses }>
           <DocumentMeta {...meta} />
           <PageContent pageName="home" />
+          <div class="backdrop"></div>
+          <Availability status={status} />
         </section>
       )
     }

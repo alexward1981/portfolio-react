@@ -15,20 +15,18 @@ export default class PageContent extends React.Component {
 
     return(
       <div>
-        <h1>{content.title}</h1>
-        <h2>{content.subtite}</h2>
-        <div>
-          {content.body}
-        </div>
+        { content.title && <h1>{content.title}</h1> }
+        { content.subtitle && <h2>{content.subtitle}</h2> }
+        { content.minime && <img src={content.minime} alt={content.minimeAlt} /> }
+        { content.body && <div> {content.body} </div> }
       </div>
     )
   }
 }
 
 function select(state) {
-  const { config, pageContent } = state;
+  const {  pageContent } = state;
   return {
-    config,
     pageContent
   };
 }

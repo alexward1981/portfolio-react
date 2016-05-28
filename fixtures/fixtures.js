@@ -9,7 +9,7 @@
 
 exports.config = [{
   status: 'available',
-  statusText: 'Available from 2nd May 2016'
+  statusText: 'I\'m <strong>currently available</strong> for projects in the London area'
 }];
 
 /**
@@ -145,6 +145,8 @@ exports.pageContent = [
     title: 'Hi! I\'m Alex',
     subtitle: 'I make websites',
     body: '',
+    minime: '/static/images/alex-available.svg',
+    minimeAlt: 'An illustration of Alex Ward waving',
     buttonClass: '',
     buttonText: '',
     buttonUrl: ''

@@ -6,6 +6,8 @@ var PageContentSchema   = new Schema({
     title: String,
     subtitle: String,
     body: String,
+    minime: String,
+    minimeAlt: String,
     buttonClass: String,
     buttonText: String,
     buttonUrl: String
