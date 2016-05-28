@@ -18,7 +18,7 @@ export default class Availability extends React.Component {
     }
 
     return(
-      <div className="cta">
+      <div class={this.props.cssclass}>
         <div dangerouslySetInnerHTML={renderStatus()} />
         <div>
           <Link to="contact">Get in touch</Link>

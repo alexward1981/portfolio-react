@@ -24,7 +24,7 @@ export class Index extends React.Component {
       canonical: pagesItems.canonical,
     }
 
-    var sectionClasses = 'landing ' + status;
+    var sectionClasses = 'c-landing-page ' + status;
     if(isFetching) {
       return(
         <section class="loader">
@@ -35,9 +35,9 @@ export class Index extends React.Component {
       return(
         <section class={ sectionClasses }>
           <DocumentMeta {...meta} />
-          <PageContent pageName="home" />
-          <div class="backdrop"></div>
-          <Availability status={status} />
+          <PageContent pageName="home" cssclass="c-landing-page_content"/>
+          <div class="c-landing-page_backdrop"></div>
+          <Availability status={status} cssclass="c-availability" />
         </section>
       )
     }

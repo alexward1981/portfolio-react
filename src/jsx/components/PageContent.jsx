@@ -14,7 +14,7 @@ export default class PageContent extends React.Component {
     const content = pageContent.items;
 
     return(
-      <div>
+      <div class={this.props.cssclass}>
         { content.title && <h1>{content.title}</h1> }
         { content.subtitle && <h2>{content.subtitle}</h2> }
         { content.minime && <img src={content.minime} alt={content.minimeAlt} /> }
