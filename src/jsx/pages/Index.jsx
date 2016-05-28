@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import DocumentMeta from 'react-document-meta';
 import { connect } from 'react-redux';
 import { configLoad, pagesLoad } from '../../scripts/actions';
-
+import PageContent from '../components/PageContent.jsx';
 
 export class Index extends React.Component {
   componentWillMount() {
@@ -16,13 +16,14 @@ export class Index extends React.Component {
 
     const configItems = config.items;
     const pagesItems = pages.items;
+    const status = configItems.status;
     const meta = {
-      title: '[' + configItems.status + '] ' + pagesItems.title,
+      title: '[' + status + '] ' + pagesItems.title,
       description: pagesItems.description,
       canonical: pagesItems.canonical,
     }
 
-    var sectionClasses = 'landing ' + configItems.status;
+    var sectionClasses = 'landing ' + status;
     if(isFetching) {
       return(
         <section class="loader">
@@ -33,7 +34,7 @@ export class Index extends React.Component {
       return(
         <section class={ sectionClasses }>
           <DocumentMeta {...meta} />
-          <h1>Welcome!</h1>
+          <PageContent pageName="home" />
         </section>
       )
     }

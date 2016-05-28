@@ -14,6 +14,8 @@ export const REQUEST_SOCIAL_LINKS = 'REQUEST_SOCIAL_LINKS';
 export const GET_SOCIAL_LINKS = 'GET_SOCIAL_LINKS';
 export const REQUEST_NAV = 'REQUEST_NAV';
 export const GET_NAV = 'GET_NAV';
+export const REQUEST_PAGE_CONTENT = 'REQUEST_PAGE_CONTENT';
+export const GET_PAGE_CONTENT = 'GET_PAGE_CONTENT';
 
 // Config
 export function requestConfig() {
@@ -67,6 +69,34 @@ export function pagesLoad(slug) {
     return axios.get(API_ROOT + 'pages/'+ slug)
       .then(function(response) {
         dispatch(getPages(response.data))
+      })
+  }
+}
+
+// PageContent
+export function requestPageContent() {
+  return {
+    type: REQUEST_PAGE_CONTENT
+  };
+}
+
+export function getPageContent(json) {
+  return {
+    type: GET_PAGE_CONTENT,
+    payload: {
+      pageContent: json,
+      receivedAt: Date.now()
+    }
+  };
+}
+
+// thunk actions
+export function pageContentLoad(pageName) {
+  return dispatch => {
+    dispatch(requestPageContent());
+    return axios.get(API_ROOT + 'pageContent/'+ pageName)
+      .then(function(response) {
+        dispatch(getPageContent(response.data))
       })
   }
 }

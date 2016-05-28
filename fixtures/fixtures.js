@@ -125,3 +125,28 @@ exports.pages = [
     'class' : 'skills'
   }
 ]
+
+/**
+ * Page content fixture
+ *
+ * @pageName {string} the page this content should be displayed on
+ * @title {string} the pages main title
+ * @subtitle {string} the pages subtitle
+ * @body {string} the main body copy
+ * @buttonClass {string} if a button exists on the page, this is the class the button uses
+ * @buttonText {string} if a button exists on the page, this is the text the button uses
+ * @buttonUrl {string} if a button exists on the page, this is the url the button uses
+ *
+ **/
+
+exports.pageContent = [
+  {
+    pageName : 'home',
+    title: 'Hi! I\'m Alex',
+    subtitle: 'I make websites',
+    body: '',
+    buttonClass: '',
+    buttonText: '',
+    buttonUrl: ''
+  }
+]

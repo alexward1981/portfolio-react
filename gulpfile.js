@@ -84,7 +84,6 @@ onError = function (err) {
 gulp.task('styles', function(callback) {
   'use strict';
   return gulp.src('src/styles/start.styl')
-    .pipe(gulpif(!argv.prod, addsrc('src/styles/dev.styl')))
     .pipe(plumber(
       { errorHandler: onError }
     ))

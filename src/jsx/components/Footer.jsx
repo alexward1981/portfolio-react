@@ -7,7 +7,7 @@ export default class Footer extends React.Component {
       <footer class="c-global-footer">
         <div class="wrapper">
           <Navigation postion="footer" />
-          <div class="copyright">
+          <div class="c-footer-copyright">
             <a href="/">
               Copyright 2016
             </a>

@@ -11,7 +11,9 @@ import {
   REQUEST_SOCIAL_LINKS,
   GET_SOCIAL_LINKS,
   REQUEST_NAV,
-  GET_NAV
+  GET_NAV,
+  REQUEST_PAGE_CONTENT,
+  GET_PAGE_CONTENT
 } from './actions';
 
 const initialState = Immutable({
@@ -43,6 +45,22 @@ export function pages(state = initialState, action) {
         isFetching: false
       })
     case REQUEST_PAGES :
+      return Immutable(state).merge({
+        isFetching: true
+      })
+    default:
+      return state;
+  }
+}
+
+export function pageContent(state = initialState, action) {
+  switch (action.type) {
+    case GET_PAGE_CONTENT :
+      return Immutable(state).merge({
+        items: action.payload.pageContent,
+        isFetching: false
+      })
+    case REQUEST_PAGE_CONTENT :
       return Immutable(state).merge({
         isFetching: true
       })
@@ -86,6 +104,7 @@ export function nav(state = initialState, action) {
 const rootReducer = combineReducers({
   config,
   pages,
+  pageContent,
   nav,
   socialLinks,
   routing: routerReducer
