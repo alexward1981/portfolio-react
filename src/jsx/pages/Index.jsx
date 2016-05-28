@@ -36,7 +36,7 @@ export class Index extends React.Component {
         <section class={ sectionClasses }>
           <DocumentMeta {...meta} />
           <PageContent pageName="home" cssclass="c-landing-page_content"/>
-          <div class="c-landing-page_backdrop"></div>
+          <div class="c-landing-page_backdrop"><div></div></div>
           <Availability status={status} cssclass="c-availability" />
         </section>
       )

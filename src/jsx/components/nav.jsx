@@ -34,7 +34,7 @@ export class Navigation extends React.Component {
         )
       } else {
         return (
-          <nav class="c-footer-nav">
+          <nav class="c-global-footer-nav">
             <ul>
               { navitems }
             </ul>
