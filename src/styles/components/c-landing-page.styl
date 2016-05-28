@@ -1,5 +1,5 @@
 .c-landing-page {
-  background-color: #8DCCF0;
+  background-color: $home;
   position: absolute;
   top:0;
   left:0;
@@ -10,8 +10,19 @@
   overflow: auto;
   addPaper();
   &_content {
+    color: $light;
+    h1 {
+
+    }
     img {
       width: 15%;
     }
+  }
+  .o-btn {
+    button(#92b82a);
+    margin-right: 1rem;
+  }
+  .o-btn + .o-btn {
+    button(#b0c331);
   }
 }

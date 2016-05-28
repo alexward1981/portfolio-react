@@ -8,22 +8,22 @@ ff-body()
   +above(m) {
     font-size: $bodyCopy;
   }
-button()
+button(bgc)
   display: inline-block;
   color: #fff;
-  background: $buttonColor;
+  background-color: bgc;
   padding: $vspacing $hspacing*2
   border: 0;
   font-size: $smallCopy;
   cursor: pointer;
-  border-bottom: 3px solid darken($buttonColor, 40%);
+  border-bottom: 3px solid darken(bgc, 20%);
   &:hover {
-    background: 3px solid darken($buttonColor, 40%);
-    border-bottom: $buttonColor;
+    border-color: darken(bgc, 40%);
+    background-color: lighten(bgc, 10%);
   }
   &.disabled {
     cursor: auto;
-    background: desaturate($buttonColor, 60%);
+    background: desaturate(bgc, 60%);
     opacity: .6;
   }
 

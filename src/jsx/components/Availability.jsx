@@ -21,8 +21,8 @@ export default class Availability extends React.Component {
       <div class={this.props.cssclass}>
         <div dangerouslySetInnerHTML={renderStatus()} />
         <div>
-          <Link to="contact">Get in touch</Link>
-          <a href="https://www.dropbox.com/s/arxwap21eqkw2h3/AlexWard-ContractorCV.docx?dl=0">Download CV</a>
+          <Link to="contact" class="o-btn">Get in touch</Link>
+          <a href="https://www.dropbox.com/s/arxwap21eqkw2h3/AlexWard-ContractorCV.docx?dl=0" class="o-btn">Download CV</a>
         </div>
       </div>
     )
