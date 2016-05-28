@@ -2,8 +2,8 @@
   "name": "alexward-portfolio",
   "version": "0.0.1",
   "engines": {
-    "node": "0.12.7",
-    "npm": "2.11.3"
+    "node": "4.4.5",
+    "npm": "2.15.5"
   },
   "description": "The personal website of Alexander Ward",
   "main": "server.js",
