@@ -1,12 +1,14 @@
 var express = require('express'),
     app = express(),
     bodyParser = require('body-parser'),
+    cors = require('cors'),
     mongoose = require('mongoose');
 
 // configure app to use bodyParser()
 // this will let us get the data from a POST
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors());
 
 app.use(express.static(__dirname + '/dist'));
 
