@@ -4,6 +4,8 @@ import { routerReducer } from 'react-router-redux';
 
 // Import actions
 import {
+  REQUEST_LANG,
+  GET_LANG,
   REQUEST_CONFIG,
   GET_CONFIG,
   REQUEST_PAGES,
@@ -29,6 +31,22 @@ export function config(state = initialState, action) {
         isFetching: false
       })
     case REQUEST_CONFIG :
+      return Immutable(state).merge({
+        isFetching: true
+      })
+    default:
+      return state;
+  }
+}
+
+export function languages(state = initialState, action) {
+  switch (action.type) {
+    case GET_LANG :
+      return Immutable(state).merge({
+        items: action.payload.languages,
+        isFetching: false
+      })
+    case REQUEST_LANG :
       return Immutable(state).merge({
         isFetching: true
       })
@@ -103,6 +121,7 @@ export function nav(state = initialState, action) {
 
 const rootReducer = combineReducers({
   config,
+  languages,
   pages,
   pageContent,
   nav,

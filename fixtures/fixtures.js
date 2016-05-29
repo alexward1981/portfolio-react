@@ -25,7 +25,7 @@ exports.lang = [{
 	language: 'en-gb',
   definitions: {
   	mobileMenuLabel: 'menu',
-    copyright: '© 2016 BBQ Digital Limited'
+    copyright: '©MMVI Alexander Ward. All Rights reserved.'
   }
 }];
 

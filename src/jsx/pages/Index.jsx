@@ -14,7 +14,6 @@ export class Index extends React.Component {
 
   render() {
     const { config, pages, isFetching } = this.props
-
     const configItems = config.items;
     const pagesItems = pages.items;
     const status = configItems.status;

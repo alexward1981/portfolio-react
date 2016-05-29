@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_ROOT = 'http://127.0.0.1:5000/api/';
+const API_ROOT = 'http://localhost:5000/api/';
 
 
 // actions
@@ -16,6 +16,34 @@ export const REQUEST_NAV = 'REQUEST_NAV';
 export const GET_NAV = 'GET_NAV';
 export const REQUEST_PAGE_CONTENT = 'REQUEST_PAGE_CONTENT';
 export const GET_PAGE_CONTENT = 'GET_PAGE_CONTENT';
+
+// Language
+export function requestLanguages() {
+  return {
+    type: REQUEST_LANG
+  };
+}
+
+export function getLanguages(json) {
+  return {
+    type: GET_LANG,
+    payload: {
+      languages: json,
+      receivedAt: Date.now()
+    }
+  };
+}
+
+// thunk actions
+export function languagesLoad(pageName) {
+  return dispatch => {
+    dispatch(requestLanguages());
+    return axios.get(API_ROOT + 'lang/en-gb')
+      .then(function(response) {
+        dispatch(getLanguages(response.data))
+      })
+  }
+}
 
 // Config
 export function requestConfig() {
