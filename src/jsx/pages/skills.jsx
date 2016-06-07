@@ -3,7 +3,7 @@ import DocumentMeta from 'react-document-meta';
 import { connect } from 'react-redux';
 import { configLoad, pagesLoad } from '../../scripts/actions';
 import PageContent from '../components/PageContent.jsx';
-import SkillsTable from '../components/SkillsTable.jsx';
+import SkillsTableWrapper from '../components/Skills/SkillsTableWrapper.jsx';
 
 export class Skills extends React.Component {
   componentWillMount() {
@@ -35,7 +35,7 @@ export class Skills extends React.Component {
         <section class={ sectionClasses }>
           <DocumentMeta {...meta} />
           <PageContent pageName="skills" cssclass="c-landing-page_content"/>
-          <SkillsTable />
+          <SkillsTableWrapper />
         </section>
       )
     }

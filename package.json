@@ -1,6 +1,6 @@
 {
   "name": "alexward-portfolio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "node": "4.4.5",
     "npm": "2.15.5"
@@ -22,7 +22,7 @@
   "author": "Alex Ward",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alexward1981/portfolio-react/issues"
+    "url": "https://bbqdigital.atlassian.net/projects/APS/issues/"
   },
   "homepage": "",
   "devDependencies": {
@@ -90,11 +90,14 @@
     "react": "^15.1.0",
     "react-document-meta": "^2.0.3",
     "react-dom": "^15.1.0",
+    "react-redux": "^4.4.5",
     "react-router": "^2.0.1",
     "react-router-redux": "^4.0.4",
     "redux": "^3.5.2",
+    "redux-logger": "^2.6.1",
     "redux-seamless-immutable": "^0.2.0",
     "redux-thunk": "^2.1.0",
+    "seamless-immutable": "^6.1.0",
     "webpack": "^1.12.14"
   }
 }

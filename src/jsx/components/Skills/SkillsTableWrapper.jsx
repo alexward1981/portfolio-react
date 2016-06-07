@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router';
 import { connect } from 'react-redux';
-import { skillsLoad } from '../../scripts/actions';
+import { skillsLoad } from '../../../scripts/actions';
+import SkillsTable from './SkillsTable.jsx';
 
-export class SkillsTable extends React.Component {
+export class SkillsTableWrapper extends React.Component {
   componentWillMount() {
     const { dispatch } = this.props;
     dispatch(skillsLoad());
@@ -11,12 +11,10 @@ export class SkillsTable extends React.Component {
 
   render() {
     const { skills } = this.props;
-    // const levelNames = skills && skills.items ? skills.items.asMutable().map((item) => {
-    //     return <th key={item._id}>item.name</th>
-    // }) : null;
+
     if(skills.isFetching) {
       return(
-        <section class="loader test">
+        <section class="loader">
           <span>Content is loading...</span>
         </section>
       )
@@ -25,18 +23,14 @@ export class SkillsTable extends React.Component {
         return(
           <section class="skill-table">
             <p>{skills.items.intro}</p>
-            <table>
-              <tbody>
-              <tr>
-                //TODO: Get this component working
-              </tr>
-              </tbody>
-            </table>
+            <SkillsTable level="1" skills={skills.items}/>
+            <SkillsTable level="2" skills={skills.items}/>
+            <SkillsTable level="3" skills={skills.items}/>
           </section>
         )
       } else {
         return(
-          <section class="loader test2">
+          <section class="loader">
             <span>Content isn't loading...</span>
           </section>
         )
@@ -52,4 +46,4 @@ function select(state) {
   };
 }
 
-export default connect(select)(SkillsTable);
+export default connect(select)(SkillsTableWrapper);

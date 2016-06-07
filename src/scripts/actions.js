@@ -39,11 +39,10 @@ export function getSkills(json) {
 // thunk actions
 export function skillsLoad() {
   return dispatch => {
-    dispatch(requestLanguages());
+    dispatch(requestSkills());
     return axios.get(API_ROOT + 'skills')
       .then(function(response) {
-        dispatch(getLanguages(response.data))
-        console.log(response.data)
+        dispatch(getSkills(response.data))
       })
   }
 }

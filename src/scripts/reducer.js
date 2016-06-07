@@ -61,7 +61,7 @@ export function skills(state = initialState, action) {
   switch (action.type) {
     case GET_SKILLS :
       return Immutable(state).merge({
-        items: action.payload.skills,
+        items: action.payload.skills[0],
         isFetching: false
       })
     case REQUEST_SKILLS :
