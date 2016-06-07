@@ -54,6 +54,6 @@ app.use('/api', Skills);
 app.listen(port);
 console.log('The api is running on port: ' + port);
 
-const mongoString = process.env.NODE_ENV === 'production' ? process.env.MONGODB_URI : 'mongodb://localhost:27017/portfolio';
+const mongoString = process.env.ON_HEROKU === true ? process.env.MONGODB_URI : 'mongodb://localhost:27017/portfolio';
 
 mongoose.connect(mongoString)
