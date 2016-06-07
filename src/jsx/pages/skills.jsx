@@ -2,9 +2,10 @@ import React, { PropTypes } from 'react';
 import DocumentMeta from 'react-document-meta';
 import { connect } from 'react-redux';
 import { configLoad, pagesLoad } from '../../scripts/actions';
+import PageContent from '../components/PageContent.jsx';
+import SkillsTable from '../components/SkillsTable.jsx';
 
-
-export default class Skills extends React.Component {
+export class Skills extends React.Component {
   componentWillMount() {
     const { dispatch } = this.props;
     dispatch(configLoad());
@@ -12,24 +13,33 @@ export default class Skills extends React.Component {
   }
 
   render() {
-    const { config, pages, isFetching } = this.props
+    const { config, pages} = this.props
     const configItems = config.items;
     const pagesItems = pages.items;
-
+    const status = configItems.status;
     const meta = {
-      title: '[' + configItems.status + '] ' + pagesItems.title,
+      title: '[' + status + '] ' + pagesItems.title,
       description: pagesItems.description,
       canonical: pagesItems.canonical,
     }
 
-    var sectionClasses = 'skills ' + configItems.status;
+    var sectionClasses = 'c-skills-page ' + status;
+    if(pages.isFetching) {
+      return(
+        <section class="loader">
+          <span>Content is totally loading...</span>
+        </section>
+      )
+    } else {
+      return(
+        <section class={ sectionClasses }>
+          <DocumentMeta {...meta} />
+          <PageContent pageName="skills" cssclass="c-landing-page_content"/>
+          <SkillsTable />
+        </section>
+      )
+    }
 
-    return(
-      <section class={ sectionClasses }>
-        <DocumentMeta {...meta} />
-        <h1>Welcome!</h1>
-      </section>
-    )
   }
 }
 

@@ -37,6 +37,7 @@ var LangRoute = require('./router/langRoute');
 var SocialLinkRoute = require('./router/socialLinkRoute');
 var PagesRoute = require('./router/pagesRoute');
 var PageContentRoute = require('./router/pageContentRoute');
+var Skills = require('./router/skillsRoute');
 
 // REGISTER OUR ROUTES -------------------------------
 // all of our routes will be prefixed with /api
@@ -46,12 +47,13 @@ app.use('/api', LangRoute);
 app.use('/api', SocialLinkRoute);
 app.use('/api', PagesRoute);
 app.use('/api', PageContentRoute);
+app.use('/api', Skills);
 
 // START THE SERVER
 // =============================================================================
 app.listen(port);
 console.log('The api is running on port: ' + port);
 
+const mongoString = process.env.NODE_ENV === 'production' ? process.env.MONGODB_URI : 'mongodb://localhost:27017/portfolio';
 
-// Setup
-mongoose.connect('mongodb://localhost:27017/portfolio')
+mongoose.connect(mongoString)

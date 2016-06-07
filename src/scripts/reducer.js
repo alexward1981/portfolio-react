@@ -15,7 +15,9 @@ import {
   REQUEST_NAV,
   GET_NAV,
   REQUEST_PAGE_CONTENT,
-  GET_PAGE_CONTENT
+  GET_PAGE_CONTENT,
+  REQUEST_SKILLS,
+  GET_SKILLS
 } from './actions';
 
 const initialState = Immutable({
@@ -47,6 +49,22 @@ export function languages(state = initialState, action) {
         isFetching: false
       })
     case REQUEST_LANG :
+      return Immutable(state).merge({
+        isFetching: true
+      })
+    default:
+      return state;
+  }
+}
+
+export function skills(state = initialState, action) {
+  switch (action.type) {
+    case GET_SKILLS :
+      return Immutable(state).merge({
+        items: action.payload.skills,
+        isFetching: false
+      })
+    case REQUEST_SKILLS :
       return Immutable(state).merge({
         isFetching: true
       })
@@ -122,6 +140,7 @@ export function nav(state = initialState, action) {
 const rootReducer = combineReducers({
   config,
   languages,
+  skills,
   pages,
   pageContent,
   nav,

@@ -16,6 +16,37 @@ export const REQUEST_NAV = 'REQUEST_NAV';
 export const GET_NAV = 'GET_NAV';
 export const REQUEST_PAGE_CONTENT = 'REQUEST_PAGE_CONTENT';
 export const GET_PAGE_CONTENT = 'GET_PAGE_CONTENT';
+export const REQUEST_SKILLS = 'REQUEST_SKILLS';
+export const GET_SKILLS = 'GET_SKILLS';
+
+// Skills
+export function requestSkills() {
+  return {
+    type: REQUEST_SKILLS
+  };
+}
+
+export function getSkills(json) {
+  return {
+    type: GET_SKILLS,
+    payload: {
+      skills: json,
+      receivedAt: Date.now()
+    }
+  };
+}
+
+// thunk actions
+export function skillsLoad() {
+  return dispatch => {
+    dispatch(requestLanguages());
+    return axios.get(API_ROOT + 'skills')
+      .then(function(response) {
+        dispatch(getLanguages(response.data))
+        console.log(response.data)
+      })
+  }
+}
 
 // Language
 export function requestLanguages() {

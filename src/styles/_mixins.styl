@@ -26,7 +26,11 @@ button(bgc)
     background: desaturate(bgc, 60%);
     opacity: .6;
   }
-
+pageSetup(theme) {
+  background-color: theme;
+  padding-top: 6vh;
+  min-height: 100vh;
+}
 addPaper() {
   background-image: url('/static/images/paper.png');
   background-blend-mode: multiply;

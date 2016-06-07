@@ -10,7 +10,7 @@ export default class PageContent extends React.Component {
   }
 
   render() {
-    const { pageContent, isFetching } = this.props
+    const { pageContent } = this.props
     const content = pageContent.items;
 
     return(

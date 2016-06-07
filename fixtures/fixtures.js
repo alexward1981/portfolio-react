@@ -150,5 +150,132 @@ exports.pageContent = [
     buttonClass: '',
     buttonText: '',
     buttonUrl: ''
+  },
+  {
+    pageName : 'skills',
+    title: 'I know my stuff',
+    subtitle: '',
+    body: '',
+    minime: '/static/images/alex-available.svg',
+    minimeAlt: 'An illustration of Alex Ward waving',
+    buttonClass: '',
+    buttonText: '',
+    buttonUrl: ''
   }
 ]
+
+/**
+ * Skills fixture
+ *
+ * @name {string} The name of the Skill
+ * @level {number} The level I am at from beginner to middle-weight to expert (1,2,3)
+ *
+ **/
+
+exports.skills = [{
+  levels : [
+    {
+      name: 'senior',
+      level: 3
+    },
+    {
+      name: 'middle-weight',
+      level: 2
+    },
+    {
+      name: 'junior',
+      level: 1
+    }
+  ],
+  skills : [
+    {
+      name : 'HTML5/xHTML',
+      level: 3
+    },
+    {
+      name : 'CSS (and CSS3)',
+      level: 3
+    },
+    {
+      name : 'SASS/SCSS/LESS/Stylus',
+      level: 3
+    },
+    {
+      name : 'jQuery',
+      level: 3
+    },
+    {
+      name : 'Git',
+      level: 3
+    },
+    {
+      name : 'Gulp/Grunt',
+      level: 3
+    },
+    {
+      name : 'Responsive Design',
+      level: 3
+    },
+    {
+      name : 'Accessibility',
+      level: 3
+    },
+    {
+      name : 'Usability',
+      level: 3
+    },
+    {
+      name : 'ReactJS/Redux',
+      level: 2
+    },
+    {
+      name : 'Express',
+      level: 2
+    },
+    {
+      name : 'Handlebars/Moustache/Nunjucks',
+      level: 2
+    },
+    {
+      name : 'CMS Templating',
+      level: 2
+    },
+    {
+      name : 'Illustration',
+      level: 2
+    },
+    {
+      name : 'Design',
+      level: 2
+    },
+    {
+      name : 'Server Management',
+      level: 2
+    },
+    {
+      name : 'Procedural PHP',
+      level: 2
+    },
+    {
+      name : 'MySQL',
+      level: 1
+    },
+    {
+      name : 'OO PHP',
+      level: 1
+    },
+    {
+      name : 'AngularJS',
+      level: 1
+    },
+    {
+      name : 'PHP MVC',
+      level: 1
+    },
+    {
+      name : '3D Modelling',
+      level: 1
+    }
+  ],
+  intro: 'Intro text will be added later'
+}]

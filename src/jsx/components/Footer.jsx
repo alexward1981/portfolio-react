@@ -14,7 +14,7 @@ export default class Footer extends React.Component {
     if(languages.isFetching) {
       return(
         <section class="loader">
-          <span>Content is loading...</span>
+          <span>Footer is loading...</span>
         </section>
       )
     } else {
@@ -32,7 +32,7 @@ export default class Footer extends React.Component {
       } else {
         return(
           <section class="loader">
-            <span>Content is loading...</span>
+            <span>Footer is loading...</span>
           </section>
         )
       }
