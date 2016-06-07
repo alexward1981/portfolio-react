@@ -92,6 +92,7 @@
     "react-dom": "^15.1.0",
     "react-router": "^2.0.1",
     "react-router-redux": "^4.0.4",
+    "redux": "^3.5.2",
     "redux-seamless-immutable": "^0.2.0",
     "webpack": "^1.12.14"
   }
