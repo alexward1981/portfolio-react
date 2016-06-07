@@ -156,8 +156,8 @@ exports.pageContent = [
     title: 'I know my stuff',
     subtitle: '',
     body: '<p>My experience with the web started in 1994 when I built a dial-up Bulletin Board System, this system was not built using HTML and instead had to be coded using ASCII characters. In 1996 I progressed from BBS\'s to Websites, launching my first ever website on GeoCities. It was a dazzling array of table layouts and animated GIFS. My career only progressed from there&hellip;</p><p>Are you <em>really</em> interested in my career history?  <a href="/skills/history">If so click here to see the rest of it.</a></p>',
-    minime: '/static/images/alex-available.svg',
-    minimeAlt: 'An illustration of Alex Ward waving',
+    minime: '/static/images/alex-tables.svg',
+    minimeAlt: 'An illustration of Alex Ward',
     buttonClass: '',
     buttonText: '',
     buttonUrl: ''
