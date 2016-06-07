@@ -7,10 +7,10 @@ export class SkillsTable extends React.Component {
     const { skills, level } = this.props;
     const skillItems = skills.items;
     const levelName = skills && skillItems.levels ? skillItems.levels.asMutable().map((item) => {
-      if(item.level == level) return <h1>{ item.name }</h1>
+      if(item.level == level) return <h1 key={ item.level }>{ item.name }</h1>
     }) : null;
     const skillsList = skills && skillItems.skills ? skillItems.skills.asMutable().map((item) => {
-      if(item.level == level) return <li>{ item.name }</li>
+      if(item.level == level) return <li key={ item.key }>{ item.name }</li>
     }) : null;
     if(skills.isFetching) {
       return(

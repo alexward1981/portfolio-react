@@ -10,6 +10,7 @@ var SkillsSchema   = new Schema({
   ],
   skills: [
     {
+      key: String,
       name: String,
       level: Number
     }

@@ -155,7 +155,7 @@ exports.pageContent = [
     pageName : 'skills',
     title: 'I know my stuff',
     subtitle: '',
-    body: '',
+    body: '<p>My experience with the web started in 1994 when I built a dial-up Bulletin Board System, this system was not built using HTML and instead had to be coded using ASCII characters. In 1996 I progressed from BBS\'s to Websites, launching my first ever website on GeoCities. It was a dazzling array of table layouts and animated GIFS. My career only progressed from there&hellip;</p><p>Are you <em>really</em> interested in my career history?  <a href="/skills/history">If so click here to see the rest of it.</a></p>',
     minime: '/static/images/alex-available.svg',
     minimeAlt: 'An illustration of Alex Ward waving',
     buttonClass: '',
@@ -189,90 +189,112 @@ exports.skills = [{
   ],
   skills : [
     {
+      key: 'hMnQ4pS@K',
       name : 'HTML5/xHTML',
       level: 3
     },
     {
+      key: '$TLQ[9b#13q',
       name : 'CSS (and CSS3)',
       level: 3
     },
     {
+      key: 'W^OETz7QG)7D4',
       name : 'SASS/SCSS/LESS/Stylus',
       level: 3
     },
     {
+      key: 'lvoTtoBK0)TCd',
       name : 'jQuery',
       level: 3
     },
     {
+      key: 'LOVp8ylp',
       name : 'Git',
       level: 3
     },
     {
+      key: 'KyT%MhvGcJq',
       name : 'Gulp/Grunt',
       level: 3
     },
     {
+      key: '1fa#Os3SvnDY0jJl',
       name : 'Responsive Design',
       level: 3
     },
     {
+      key: '^AArCIVa',
       name : 'Accessibility',
       level: 3
     },
     {
+      key: 'hry^aFrt&',
       name : 'Usability',
       level: 3
     },
     {
+      key: 'v#m^&jQnuIA(2fvtX8A',
       name : 'ReactJS/Redux',
       level: 2
     },
     {
+      key: '9%6Y5A0GR',
       name : 'Express',
       level: 2
     },
     {
+      key: 'IjzaZT[2hl2CD!$zf',
       name : 'Handlebars/Moustache/Nunjucks',
       level: 2
     },
     {
+      key: '8Y6ZJILHwyZIB8@Fp',
       name : 'CMS Templating',
       level: 2
     },
     {
+      key: 'qx9uSad]SCiY',
       name : 'Illustration',
       level: 2
     },
     {
+      key: 'TVtC$I8X4iCv',
       name : 'Design',
       level: 2
     },
     {
+      key: 'pWYd*FFb',
       name : 'Server Management',
       level: 2
     },
     {
+      key: 'eCa^&P#tL3uR@[P#pzc$',
       name : 'Procedural PHP',
       level: 2
     },
     {
+      key: '1DX5T428$',
       name : 'MySQL',
       level: 1
     },
     {
+      key: 'Aqs3*',
       name : 'OO PHP',
       level: 1
     },
     {
+      key: '*]uHWVmDZo4E',
       name : 'AngularJS',
       level: 1
     },
     {
+      key: 'QygDyOC4s6s[R',
       name : 'PHP MVC',
       level: 1
     },
     {
+      key: 'e(ljP7iZ9p[',
       name : '3D Modelling',
       level: 1
     }

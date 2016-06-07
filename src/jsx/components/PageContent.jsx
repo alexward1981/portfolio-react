@@ -12,13 +12,14 @@ export default class PageContent extends React.Component {
   render() {
     const { pageContent } = this.props
     const content = pageContent.items;
+    function getBodyCopy() { return {__html: content.body}; };
 
     return(
       <div class={this.props.cssclass}>
         { content.title && <h1>{content.title}</h1> }
         { content.subtitle && <h2>{content.subtitle}</h2> }
         { content.minime && <img src={content.minime} alt={content.minimeAlt} /> }
-        { content.body && <div> {content.body} </div> }
+        { content.body && <div dangerouslySetInnerHTML={getBodyCopy()} /> }
       </div>
     )
   }
