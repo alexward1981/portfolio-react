@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const port = process.env.PORT || 8080
-const API_ROOT = 'http://localhost:'+port+'/api/';
+const API_ROOT = process.env.NODE_ENV !== 'production' ? 'http://localhost:'+port+'/api/' : 'https://alexward-portfolio.herokuapp.com/api/';
 
 
 // actions
