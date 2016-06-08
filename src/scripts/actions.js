@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_ROOT = 'http://localhost:5000/api/';
+const port = process.env.PORT || 8080
+const API_ROOT = 'http://localhost:'+port+'/api/';
 
 
 // actions

@@ -12,7 +12,7 @@ app.use(cors());
 
 app.use(express.static(__dirname + '/dist'));
 
-var port = process.env.PORT || 5000;        // set our port
+var port = process.env.PORT || 8080;        // set our port
 
 // ROUTES FOR OUR API
 var router = express.Router();              // get an instance of the express Router
