@@ -6,28 +6,19 @@
   padding-bottom: 3vh;
   overflow: auto;
   pageSetup($home);
-  addPaper();
-  &_content {
+  .c-page-content&_content {
     text-align: center;
-    color: $light;
-    padding: $spacing*3
     // This page uses custom header sizes
     h1 {
-      ff-title();
-      line-height: $lineHeight;
       font-size: 10rem;
     }
     h2 {
-      ff-title();
       font-size: 5rem;
     }
     img {
-      position: absolute;
       right: $hspacing;
       bottom: $vspacing*3;
       width: 15%;
-      z-index: 200;
-      filter: drop-shadow( 0 -5px 5px rgba($dark, .2));
     }
   }
   .o-btn {

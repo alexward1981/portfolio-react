@@ -5,6 +5,8 @@ ff-body()
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   font-size: $baseFont*1.6
+  line-height: $lineHeight*1.5;
+  margin-bottom: $hspacing;
   +above(m) {
     font-size: $bodyCopy;
   }
@@ -26,12 +28,13 @@ button(bgc)
     background: desaturate(bgc, 60%);
     opacity: .6;
   }
+addPaper() {
+  background-image: url('/static/images/paper.png');
+  background-blend-mode: multiply;
+}
 pageSetup(theme) {
   background-color: theme;
   padding-top: 6vh;
   min-height: 100vh;
-}
-addPaper() {
-  background-image: url('/static/images/paper.png');
-  background-blend-mode: multiply;
+  addPaper();
 }

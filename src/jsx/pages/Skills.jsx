@@ -34,7 +34,7 @@ export class Skills extends React.Component {
       return(
         <section class={ sectionClasses }>
           <DocumentMeta {...meta} />
-          <PageContent pageName="skills" cssclass="c-landing-page_content"/>
+          <PageContent pageName="skills" cssclass="c-skills-page_content"/>
           <SkillsTableWrapper />
         </section>
       )

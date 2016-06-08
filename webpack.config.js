@@ -17,6 +17,9 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+     historyApiFallback: true
+  },
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),

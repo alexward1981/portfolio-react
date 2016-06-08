@@ -176,7 +176,7 @@ exports.skills = [{
   levels : [
     {
       name: 'senior',
-      level: 3
+      level: 1
     },
     {
       name: 'middle-weight',
@@ -184,54 +184,54 @@ exports.skills = [{
     },
     {
       name: 'junior',
-      level: 1
+      level: 3
     }
   ],
   skills : [
     {
       key: 'hMnQ4pS@K',
-      name : 'HTML5/xHTML',
-      level: 3
+      name : 'HTML5 / xHTML',
+      level: 1
     },
     {
       key: '$TLQ[9b#13q',
       name : 'CSS (and CSS3)',
-      level: 3
+      level: 1
     },
     {
       key: 'W^OETz7QG)7D4',
-      name : 'SASS/SCSS/LESS/Stylus',
-      level: 3
+      name : 'SASS / SCSS / LESS / Stylus',
+      level: 1
     },
     {
       key: 'lvoTtoBK0)TCd',
       name : 'jQuery',
-      level: 3
+      level: 1
     },
     {
       key: 'LOVp8ylp',
       name : 'Git',
-      level: 3
+      level: 1
     },
     {
       key: 'KyT%MhvGcJq',
-      name : 'Gulp/Grunt',
-      level: 3
+      name : 'Gulp / Grunt',
+      level: 1
     },
     {
       key: '1fa#Os3SvnDY0jJl',
       name : 'Responsive Design',
-      level: 3
+      level: 1
     },
     {
       key: '^AArCIVa',
       name : 'Accessibility',
-      level: 3
+      level: 1
     },
     {
       key: 'hry^aFrt&',
       name : 'Usability',
-      level: 3
+      level: 1
     },
     {
       key: 'v#m^&jQnuIA(2fvtX8A',
@@ -245,7 +245,7 @@ exports.skills = [{
     },
     {
       key: 'IjzaZT[2hl2CD!$zf',
-      name : 'Handlebars/Moustache/Nunjucks',
+      name : 'Handlebars / Moustache / Nunjucks',
       level: 2
     },
     {
@@ -276,28 +276,28 @@ exports.skills = [{
     {
       key: '1DX5T428$',
       name : 'MySQL',
-      level: 1
+      level: 3
     },
     {
       key: 'Aqs3*',
       name : 'OO PHP',
-      level: 1
+      level: 3
     },
     {
       key: '*]uHWVmDZo4E',
       name : 'AngularJS',
-      level: 1
+      level: 3
     },
     {
       key: 'QygDyOC4s6s[R',
       name : 'PHP MVC',
-      level: 1
+      level: 3
     },
     {
       key: 'e(ljP7iZ9p[',
       name : '3D Modelling',
-      level: 1
+      level: 3
     }
   ],
-  intro: 'Intro text will be added later'
+  intro: 'I have split my skills up into three groups based on I feel I should be hired if that element was the key part of my role.'
 }]

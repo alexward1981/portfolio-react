@@ -1,5 +1,6 @@
 var express = require('express'),
     app = express(),
+    path = require('path'),
     bodyParser = require('body-parser'),
     cors = require('cors'),
     mongoose = require('mongoose');
@@ -25,10 +26,11 @@ router.use(function(req, res, next) {
   next(); // make sure we go to the next routes and don't stop here
 });
 
-// test route to make sure everything is working (accessed at GET http://localhost:5000/api)
-router.get('/', function(req, res) {
+// test route to make sure everything is working (accessed at GET http://localhost:8080/api)
+router.get('/', function(req, res, next) {
   'use strict';
   res.json({ message: 'hooray! welcome to our api!' });
+  next();
 });
 
 // Load in our routers
@@ -48,6 +50,13 @@ app.use('/api', SocialLinkRoute);
 app.use('/api', PagesRoute);
 app.use('/api', PageContentRoute);
 app.use('/api', Skills);
+
+// handle every other route with index.html, which will contain
+// a script tag to your application's JavaScript file(s).
+app.get('*', function (request, response){
+  'use strict';
+  response.sendFile(path.resolve(__dirname, 'dist', 'index.html'))
+})
 
 // START THE SERVER
 // =============================================================================
