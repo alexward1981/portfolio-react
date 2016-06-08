@@ -190,17 +190,22 @@ exports.skills = [{
   skills : [
     {
       key: 'hMnQ4pS@K',
-      name : 'HTML5 / xHTML',
+      name : 'HTML5',
       level: 1
     },
     {
       key: '$TLQ[9b#13q',
-      name : 'CSS (and CSS3)',
+      name : 'CSS3',
       level: 1
     },
     {
       key: 'W^OETz7QG)7D4',
-      name : 'SASS / SCSS / LESS / Stylus',
+      name : 'SASS / Less',
+      level: 1
+    },
+    {
+      key: 'W^OETz7Q234G)7D4',
+      name : 'Stylus',
       level: 1
     },
     {
@@ -219,11 +224,6 @@ exports.skills = [{
       level: 1
     },
     {
-      key: '1fa#Os3SvnDY0jJl',
-      name : 'Responsive Design',
-      level: 1
-    },
-    {
       key: '^AArCIVa',
       name : 'Accessibility',
       level: 1
@@ -234,8 +234,18 @@ exports.skills = [{
       level: 1
     },
     {
+      key: 'IjzaZT[2hl2CD!$zf',
+      name : 'Pure JavaScript',
+      level: 2
+    },
+    {
       key: 'v#m^&jQnuIA(2fvtX8A',
-      name : 'ReactJS/Redux',
+      name : 'React',
+      level: 2
+    },
+    {
+      key: 'v234#m^&jQnuIA(2fvtX8A',
+      name : 'Redux',
       level: 2
     },
     {
@@ -244,13 +254,38 @@ exports.skills = [{
       level: 2
     },
     {
-      key: 'IjzaZT[2hl2CD!$zf',
-      name : 'Handlebars / Moustache / Nunjucks',
+      key: '9%6Y5A0GRwer',
+      name : 'MongoDB',
       level: 2
     },
     {
+      key: 'IjzaZT[2hl2CD!$zf',
+      name : 'Handlebars',
+      level: 2
+    },
+    {
+      key: 'IjzaZT[2hl2xCD!$zf',
+      name : 'Moustache',
+      level: 2
+    },
+    {
+      key: 'Ij23zaZT[2hl2CD!$zf',
+      name : 'Nunjucks',
+      level: 1
+    },
+    {
       key: '8Y6ZJILHwyZIB8@Fp',
-      name : 'CMS Templating',
+      name : 'Wordpress',
+      level: 2
+    },
+    {
+      key: '8Y6ZJI23424LHwyZIB8@Fp',
+      name : 'SVN / HG',
+      level: 2
+    },
+    {
+      key: '8Y6ZJI234223423424LHwyZIB8@Fp',
+      name : 'Webpack',
       level: 2
     },
     {
@@ -261,7 +296,7 @@ exports.skills = [{
     {
       key: 'TVtC$I8X4iCv',
       name : 'Design',
-      level: 2
+      level: 1
     },
     {
       key: 'pWYd*FFb',
@@ -276,6 +311,11 @@ exports.skills = [{
     {
       key: '1DX5T428$',
       name : 'MySQL',
+      level: 3
+    },
+    {
+      key: '*]uHWV234mDZo4E',
+      name : 'NodeJS',
       level: 3
     },
     {
@@ -297,7 +337,12 @@ exports.skills = [{
       key: 'e(ljP7iZ9p[',
       name : '3D Modelling',
       level: 3
+    },
+    {
+      key: '1fa#Os3SvnDY0jJl',
+      name : 'Responsive Design',
+      level: 1
     }
   ],
-  intro: 'I have split my skills up into three groups based on I feel I should be hired if that element was the key part of my role.'
+  intro: 'My skills are grouped by ability, I am comfortable working in anything in the middle-weight or junior groups provided there is room for on-the-job learning. However my strengths and passions lie in the senior column so this is where clients will get the best from me'
 }]
