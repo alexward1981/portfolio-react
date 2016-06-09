@@ -22,6 +22,7 @@ export class SkillsTableWrapper extends React.Component {
       if(skills.items) {
         return(
           <section class="c-skill-table">
+            <h2>Skills Breakdown</h2>
             <p>{skills.items.intro}</p>
             <SkillsTable level="1" skills={skills.items}/>
             <SkillsTable level="2" skills={skills.items}/>

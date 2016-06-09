@@ -155,8 +155,8 @@ exports.pageContent = [
     pageName : 'skills',
     title: 'I know my stuff',
     subtitle: '',
-    body: '<p>My experience with the web started in 1994 when I built a dial-up Bulletin Board System, this system was not built using HTML and instead had to be coded using ASCII characters. In 1996 I progressed from BBS\'s to Websites, launching my first ever website on GeoCities. It was a dazzling array of table layouts and animated GIFS. My career only progressed from there&hellip;</p><p>Are you <em>really</em> interested in my career history?  <a href="/skills/history">If so click here to see the rest of it.</a></p>',
-    minime: '/static/images/alex-tables.svg',
+    body: '<p>My experience with the web started in 1994 when I built a dial-up Bulletin Board System, this system was not built using HTML and instead had to be coded using ASCII characters. In 1996 I progressed from BBS\'s to Websites, launching my first ever website on GeoCities. It was a dazzling array of table layouts and animated GIFS. My career only progressed from there&hellip;</p><p>Are you <em>really</em> interested in my career history?  <a href="/skills/history">If so click here to see the rest of it.</a></p><p>More than anything else, I would consider myself a UI Architect, in a nutshell this means that I\'m at my best when I\'m creating a new project from scratch. I\'m very comfortable with creating HTML and CSS from wireframes or designs, setting the coding and accessibility standards and creating an efficient build system. Ideally I would also have some influence over the UX and design process.</p><p>Outside of web development, I\'m also a fairly skilled designer and illustrator (I made this site for example), I\'m also trying to develop my 3D modelling skills as I would love to develop games for the up and coming Virtual Reality platforms such as the Oculus Rift and HTC Vive.</p>',
+    minime: '/static/images/alex-skills.svg',
     minimeAlt: 'An illustration of Alex Ward',
     buttonClass: '',
     buttonText: '',
@@ -234,7 +234,7 @@ exports.skills = [{
       level: 1
     },
     {
-      key: 'IjzaZT[2hl2CD!$zf',
+      key: 'IjzaZT2hwerfwel2CD!$zf',
       name : 'Pure JavaScript',
       level: 2
     },
@@ -297,11 +297,6 @@ exports.skills = [{
       key: 'TVtC$I8X4iCv',
       name : 'Design',
       level: 1
-    },
-    {
-      key: 'pWYd*FFb',
-      name : 'Server Management',
-      level: 2
     },
     {
       key: 'eCa^&P#tL3uR@[P#pzc$',

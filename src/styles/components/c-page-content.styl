@@ -1,12 +1,12 @@
 // As most pages share similar styles for content, here are some standards
 .c-page-content {
   color: $light;
-  padding: $spacing*3
+  padding: $vspacing $hspacing*3
   h1 {
     ff-title();
     line-height: $lineHeight;
     font-size: $crust;
-    margin-bottom: $vspacing;
+    margin-bottom: $vspacing*2;
   }
   h2 {
     ff-title();
@@ -16,9 +16,6 @@
     ff-body();
   }
   img {
-    position: absolute;
-    right: $hspacing;
-    bottom: $vspacing*3;
     width: 15%;
     z-index: 200;
     filter: drop-shadow( 0 -5px 5px rgba($dark, .2));

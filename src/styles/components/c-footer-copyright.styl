@@ -1,4 +1,8 @@
 .c-global-footer_copyright {
-  float: right;
-  padding: .8rem 1rem 0 0;
+  display:none;
+  +above('s') {
+    display: block;
+    float: right;
+    padding: .8rem 1rem 0 0;
+  }
 }
