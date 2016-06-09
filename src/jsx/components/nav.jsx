@@ -26,7 +26,7 @@ export class Navigation extends React.Component {
       if (this.props.position === 'header') {
         return(
           <nav class="c-global-nav">
-            <span class="c-global-nav_toggle">Menu</span>
+            <span class="c-global-nav_toggle"><div>Menu</div></span>
             <ul>
               { navitems }
             </ul>
