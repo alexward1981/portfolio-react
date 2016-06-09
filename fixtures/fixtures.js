@@ -73,7 +73,7 @@ exports.socialLinks = [
   {
   	label: 'LinkedIn',
   	title: 'Connect with me on LinkedIn',
-  	class: 'fa-facebook-official',
+  	class: 'fa-linkedin-square',
   	link: 'https://uk.linkedin.com/in/alexbward'
   }
 ];

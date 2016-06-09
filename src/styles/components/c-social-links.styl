@@ -1,15 +1,44 @@
 .c-social-links {
-  float: right;
-  padding-right: $hspacing*2;
-  font-size: $outerCore;
+  +above(m) {
+    float: right;
+    padding: 0 $hspacing*2;
+    font-size: $outerCore;
+  }
   li {
-    display: inline-block;
+    span(1/6);
     a {
       display: block;
-      text-transform: capitalize;
-      padding: 1rem;
-      color: $light;
+      color: #fff;
+      font-size: $mantle;
+      margin-right: ($hspacing);
+      padding: ($spacing);
       text-shadow: 1px 1px 1px rgba($dark, .2);
+      span {
+        position: absolute;
+        left: -9999px;
+      }
+      &:hover,
+      &:focus {
+        color: #fff;
+        &.fa-facebook-official {
+          background-color: #47639E;
+        }
+        &.fa-twitter {
+          background-color: #55ACEE;
+        }
+        &.fa-dribbble {
+          background-color: #C01C6F;
+        }
+        &.fa-github {
+          background-color: #333333;
+        }
+        &.fa-behance-square {
+          background-color: #0079ff;
+        }
+        &.fa-linkedin-square {
+          background-color: #287BBC;
+        }
+      }
     }
   }
 }

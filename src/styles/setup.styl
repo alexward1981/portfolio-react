@@ -47,3 +47,13 @@ body {
 .page-wrapper, .main {
   min-height:100vh;
 }
+
+.page-wrapper {
+  &.menu-open {
+    .main {
+        opacity: .4;
+        filter: blur(3px);
+        pointer-events: none;
+    }
+  }
+}
