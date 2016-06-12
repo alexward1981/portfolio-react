@@ -20,6 +20,8 @@ export const REQUEST_SKILLS = 'REQUEST_SKILLS';
 export const GET_SKILLS = 'GET_SKILLS';
 export const REQUEST_BRANDS = 'REQUEST_BRANDS';
 export const GET_BRANDS = 'GET_BRANDS';
+export const REQUEST_TESTIMONIALS = 'REQUEST_TESTIMONIALS';
+export const GET_TESTIMONIALS = 'GET_TESTIMONIALS';
 
 // Brands
 export function requestBrands() {
@@ -74,6 +76,34 @@ export function skillsLoad() {
     return axios.get(API_ROOT + 'skills')
       .then(function(response) {
         dispatch(getSkills(response.data))
+      })
+  }
+}
+
+// Testimonials
+export function requestTestimonials() {
+  return {
+    type: REQUEST_TESTIMONIALS
+  };
+}
+
+export function getTestimonials(json) {
+  return {
+    type: GET_TESTIMONIALS,
+    payload: {
+      testimonials: json,
+      receivedAt: Date.now()
+    }
+  };
+}
+
+// thunk actions
+export function testimonialsLoad() {
+  return dispatch => {
+    dispatch(requestTestimonials());
+    return axios.get(API_ROOT + 'testimonials')
+      .then(function(response) {
+        dispatch(getTestimonials(response.data))
       })
   }
 }

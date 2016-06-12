@@ -461,3 +461,56 @@ exports.brands = [
     link: '',
   }
 ]
+
+/**
+ * Testimonials fixture
+ *
+ * @review {string} the Testimonial
+ * @reviewerName {string} the name of the reviewer
+ * @reviewerTitle {string} the job title of the reviewer
+ * @reviewerCompany {string} the company of the reviewer
+ *
+ **/
+
+exports.testimonials = [
+  {
+    review: '<p>Alex clearly has a great level of experience and technical knowledge and completed the task at ease. His enthusiasm and easy going attitude also made the task that much easier.</p>',
+    reviewerName: 'Spencer Leah',
+    reviewerTitle: 'Head of Digital',
+    reviewerCompany: 'Plusnet',
+    reviewerProfile: 'https://www.linkedin.com/in/spencer-leah-8ba74443',
+    reviewerImage: '/static/images/testimonials/spencer-leah.jpg'
+  },
+  {
+    review: '<p>Alex is an extremely capable front end developer, he is a great team player with a great depth of insight in to a number of areas that massively benefited the project we worked on together. If you are looking for someone who is fast, efficient, reliable and highly skilled then Alex is a great guy to have on board.</p><p> I will be keeping him at the top of my list for UI developers in the future.</p>',
+    reviewerName: 'Matthew McConnell',
+    reviewerTitle: 'Delivery Manager',
+    reviewerCompany: 'Valtech',
+    reviewerProfile: 'https://uk.linkedin.com/in/matthew-mcconnell-27b20b82',
+    reviewerImage: '/static/images/testimonials/matt-mcconnell.jpg'
+  },
+  {
+    review: '<p>Alex\'s deep experience in this area is evident both in the quality of his work, and his clear articulation of problems/challenges alongside workable solutions. I would happily recommend Alex, and would certainly use him again.</p>',
+    reviewerName: 'David Fowler',
+    reviewerTitle: 'Business & Systems Integration Manager',
+    reviewerCompany: 'Accenture',
+    reviewerProfile: 'https://www.linkedin.com/in/dcfowler',
+    reviewerImage: '/static/images/testimonials/david-fowler.jpg'
+  },
+  {
+    review: '<p>Alex has been nothing short of exemplary in his work. He has taken every brief and task given, always going beyond what was asked to deliver top quality results in a timely and professional manner.</p>',
+    reviewerName: 'Vincent Pickering',
+    reviewerTitle: 'Lead UX Developer',
+    reviewerCompany: 'Bolser',
+    reviewerProfile: 'https://www.linkedin.com/in/vipickering',
+    reviewerImage: '/static/images/testimonials/vincent-pickering.jpg'
+  },
+  {
+    review: '<p>Alex is a solid front end developer and a pleasure to work with. I was fortunate enough to work with him on a number of projects for high profile clients including P&G. He has a great attitude to development challenges and always delivers. I would certainly work with him again.</p>',
+    reviewerName: 'Phillip Mundy',
+    reviewerTitle: 'Distruptive technology Entrepreneur',
+    reviewerCompany: 'Twentysix',
+    reviewerProfile: 'https://uk.linkedin.com/in/philip-mundy-6a4b9a1',
+    reviewerImage: '/static/images/testimonials/phil-mundy.jpg'
+  }
+]

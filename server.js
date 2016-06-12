@@ -41,6 +41,7 @@ var PagesRoute = require('./router/pagesRoute');
 var PageContentRoute = require('./router/pageContentRoute');
 var Skills = require('./router/skillsRoute');
 var Brands = require('./router/brandsRoute');
+var Testimonials = require('./router/testimonialsRoute');
 
 // REGISTER OUR ROUTES -------------------------------
 // all of our routes will be prefixed with /api
@@ -52,6 +53,7 @@ app.use('/api', PagesRoute);
 app.use('/api', PageContentRoute);
 app.use('/api', Skills);
 app.use('/api', Brands);
+app.use('/api', Testimonials);
 
 // handle every other route with index.html, which will contain
 // a script tag to your application's JavaScript file(s).
