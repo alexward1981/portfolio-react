@@ -1,12 +1,18 @@
 .c-contact-page {
   pageSetup($contact);
   a {
-    color: lighten($skills, 60%);
+    color: lighten($contact, 60%);
     &:hover {
       text-decoration: underline;
     }
   }
   &_content {
+    .details {
+      span {
+        display: block;
+        padding: $vspacing 0;
+      }
+    }
     img {
       width: 100%;
       +above('s') {

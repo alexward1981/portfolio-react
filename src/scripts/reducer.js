@@ -17,7 +17,9 @@ import {
   REQUEST_PAGE_CONTENT,
   GET_PAGE_CONTENT,
   REQUEST_SKILLS,
-  GET_SKILLS
+  GET_SKILLS,
+  REQUEST_BRANDS,
+  GET_BRANDS
 } from './actions';
 
 const initialState = Immutable({
@@ -33,6 +35,22 @@ export function config(state = initialState, action) {
         isFetching: false
       })
     case REQUEST_CONFIG :
+      return Immutable(state).merge({
+        isFetching: true
+      })
+    default:
+      return state;
+  }
+}
+
+export function brands(state = initialState, action) {
+  switch (action.type) {
+    case GET_BRANDS :
+      return Immutable(state).merge({
+        items: action.payload.brands,
+        isFetching: false
+      })
+    case REQUEST_BRANDS :
       return Immutable(state).merge({
         isFetching: true
       })
@@ -141,6 +159,7 @@ const rootReducer = combineReducers({
   config,
   languages,
   skills,
+  brands,
   pages,
   pageContent,
   nav,

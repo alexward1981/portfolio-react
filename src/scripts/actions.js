@@ -18,6 +18,37 @@ export const REQUEST_PAGE_CONTENT = 'REQUEST_PAGE_CONTENT';
 export const GET_PAGE_CONTENT = 'GET_PAGE_CONTENT';
 export const REQUEST_SKILLS = 'REQUEST_SKILLS';
 export const GET_SKILLS = 'GET_SKILLS';
+export const REQUEST_BRANDS = 'REQUEST_BRANDS';
+export const GET_BRANDS = 'GET_BRANDS';
+
+// Brands
+export function requestBrands() {
+  return {
+    type: REQUEST_BRANDS
+  };
+}
+
+export function getBrands(json) {
+  return {
+    type: GET_BRANDS,
+    payload: {
+      brands: json,
+      receivedAt: Date.now()
+    }
+  };
+}
+
+// thunk actions
+export function brandsLoad() {
+  return dispatch => {
+    dispatch(requestBrands());
+    return axios.get(API_ROOT + 'brands')
+      .then(function(response) {
+        dispatch(getBrands(response.data))
+      })
+  }
+}
+
 
 // Skills
 export function requestSkills() {

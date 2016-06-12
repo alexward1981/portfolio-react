@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { skillsLoad } from '../../../scripts/actions';
 
 export class SkillsTable extends React.Component {
   render() {

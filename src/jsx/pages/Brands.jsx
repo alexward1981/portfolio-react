@@ -3,7 +3,7 @@ import DocumentMeta from 'react-document-meta';
 import { connect } from 'react-redux';
 import { configLoad, pagesLoad } from '../../scripts/actions';
 import PageContent from '../components/PageContent.jsx';
-import SkillsTableWrapper from '../components/Skills/SkillsTableWrapper.jsx';
+import BrandsList from '../components/Brands/BrandsList.jsx';
 
 export class Brands extends React.Component {
   componentWillMount() {
@@ -37,6 +37,7 @@ export class Brands extends React.Component {
         <section class={ sectionClasses }>
           <DocumentMeta {...meta} />
           <PageContent pageName={pageName} cssclass={bemClass} />
+          <BrandsList />
         </section>
       )
     }
