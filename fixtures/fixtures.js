@@ -181,6 +181,39 @@ exports.pageContent = [
     buttonClass: '',
     buttonText: '',
     buttonUrl: ''
+  },
+  {
+    pageName : 'brands',
+    title: 'I love the brands I\'ve worked with...',
+    subtitle: '',
+    body: '<p>I\'ve been fortunate enough to work with some amazing companies over the years. Here is a selection of some of my favourites.</p><p>For a more in-depth look at the sort of things I work on, <a href="https://www.behance.net/alexward1981/">visit my Behance portfolio</a></p>',
+    minime: '/static/images/alex-smile.svg',
+    minimeAlt: 'An illustration of Alex Ward gesturing towards clients',
+    buttonClass: '',
+    buttonText: '',
+    buttonUrl: ''
+  },
+  {
+    pageName : 'testimonials',
+    title: 'and I think they love me too!',
+    subtitle: '',
+    body: '<p>Here are a selection of a few nice things clients I\'ve worked with have had to say about me, for a full list of recommendations, please visit <a href="https://www.linkedin.com/in/alexbward#recommendations"> my LinkedIn profile</a>',
+    minime: '/static/images/alex-blushing.svg',
+    minimeAlt: 'An illustration of Alex Ward blushing',
+    buttonClass: '',
+    buttonText: '',
+    buttonUrl: ''
+  },
+  {
+    pageName : 'contact',
+    title: 'and I think they love me too!',
+    subtitle: '',
+    body: '<p>If you wish to hire me for a contract or project, please contact me either using the form or the details below.</p><div class="details"><span><strong>Telephone:</strong> <a href="tel:02030867609" itemprop="telephone">0203 0867 609</a></span><span><strong>Email:</strong> <a href="mailto:hireme@bbqdigital.com" itemprop="email">hireme@bbqdigital.com</a></span><span><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/alexbward">Profile</a></span><span><strong>Yuno Juno:</strong><a href="https://app.yunojuno.com/p/alexbward">Profile</a></span><span><strong>Carrier Pigeon:</strong> No longer available</span></div><p><strong>Notice to agents:</strong><br> Please don’t contact me for permanent roles, I love contracting and no power in the \'verse will take me away from it.</p><p><a href="https://www.dropbox.com/s/arxwap21eqkw2h3/AlexWard-ContractorCV.docx?dl=0" class="btn-ico"><i class="fa fa-file-word-o tilt"></i>Download CV</a></p>',
+    minime: '/static/images/alex-phone.svg',
+    minimeAlt: 'An illustration of Alex Ward on the phone',
+    buttonClass: '',
+    buttonText: '',
+    buttonUrl: ''
   }
 ]
 

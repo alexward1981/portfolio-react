@@ -22,8 +22,10 @@ export class Skills extends React.Component {
       description: pagesItems.description,
       canonical: pagesItems.canonical,
     }
-
-    var sectionClasses = 'c-skills-page ' + status;
+    var pageName = 'skills';
+    var pageClass = 'c-'+pageName+'-page';
+    var sectionClasses = pageClass+' ' + status;
+    var bemClass = pageClass + '_content';
     if(pages.isFetching) {
       return(
         <section class="loader">
@@ -34,12 +36,11 @@ export class Skills extends React.Component {
       return(
         <section class={ sectionClasses }>
           <DocumentMeta {...meta} />
-          <PageContent pageName="skills" cssclass="c-skills-page_content"/>
+          <PageContent pageName={pageName} cssclass={bemClass} />
           <SkillsTableWrapper />
         </section>
       )
     }
-
   }
 }
 

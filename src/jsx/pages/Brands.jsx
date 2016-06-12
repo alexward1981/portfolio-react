@@ -9,7 +9,7 @@ export class Brands extends React.Component {
   componentWillMount() {
     const { dispatch } = this.props;
     dispatch(configLoad());
-    dispatch(pagesLoad('skills'));
+    dispatch(pagesLoad('brands'));
   }
 
   render() {
@@ -22,8 +22,10 @@ export class Brands extends React.Component {
       description: pagesItems.description,
       canonical: pagesItems.canonical,
     }
-
-    var sectionClasses = 'c-brands-page ' + status;
+    var pageName = 'brands';
+    var pageClass = 'c-'+pageName+'-page';
+    var sectionClasses = pageClass+' ' + status;
+    var bemClass = pageClass + '_content';
     if(pages.isFetching) {
       return(
         <section class="loader">
@@ -34,7 +36,7 @@ export class Brands extends React.Component {
       return(
         <section class={ sectionClasses }>
           <DocumentMeta {...meta} />
-          <PageContent pageName="skills" cssclass="c-skills-page_content"/>
+          <PageContent pageName={pageName} cssclass={bemClass} />
         </section>
       )
     }
