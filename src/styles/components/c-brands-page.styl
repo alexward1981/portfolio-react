@@ -1,0 +1,24 @@
+.c-brands-page {
+  pageSetup($brands)
+  a {
+    color: lighten($skills, 60%);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &_content {
+    img {
+      width: 100%;
+      +above('s') {
+        width: 50%;
+        float: right;
+        margin: 0;
+        margin-right: $hspacing*2;
+      }
+      +above(m) {
+        width: 25%;
+        margin-bottom: $vspacing;
+      }
+    }
+  }
+}

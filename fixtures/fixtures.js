@@ -105,16 +105,6 @@ exports.pages = [
     'class' : 'home'
   },
   {
-    'name' : 'about',
-    'title' : 'About me',
-    'description' : 'A little bit of information about Alex Ward',
-    'slug' : 'about-me',
-    'inNav' : 'both',
-    'parent' : '',
-    'canonical' : '',
-    'class' : 'about'
-  },
-  {
     'name' : 'skills',
     'title' : 'Skills',
     'description' : 'The skills and abilities of Alex Ward',
@@ -123,6 +113,36 @@ exports.pages = [
     'parent' : '',
     'canonical' : '',
     'class' : 'skills'
+  },
+  {
+    'name' : 'brands',
+    'title' : 'Brands',
+    'description' : 'The brands and companies Alex Ward has worked with',
+    'slug' : 'brands',
+    'inNav' : 'both',
+    'parent' : '',
+    'canonical' : '',
+    'class' : 'brands'
+  },
+  {
+    'name' : 'testimonials',
+    'title' : 'Brands',
+    'description' : 'The Testimonials given for Alex Ward',
+    'slug' : 'testimonials',
+    'inNav' : 'both',
+    'parent' : '',
+    'canonical' : '',
+    'class' : 'testimonials'
+  },
+  {
+    'name' : 'contact',
+    'title' : 'Get in touch',
+    'description' : 'Contact Alex Ward',
+    'slug' : 'contact',
+    'inNav' : 'both',
+    'parent' : '',
+    'canonical' : '',
+    'class' : 'contact'
   }
 ]
 
@@ -341,3 +361,70 @@ exports.skills = [{
   ],
   intro: 'My skills are grouped by ability, I am comfortable working in anything in the middle-weight or junior groups provided there is room for on-the-job learning. However my strengths and passions lie in the senior column so this is where clients will get the best from me'
 }]
+
+/**
+ * Brands fixture
+ *
+ * @image {string} the path to the brand image
+ * @class {string} the class on the brand
+ * @name {string} the brand name
+ * @link {string} a link to relevant information (optional)
+ *
+ **/
+
+exports.brands = [
+  {
+    image: '/static/images/brands/bandq.png',
+    class: 'bandq',
+    name: 'B&Q',
+    link: '',
+  },
+  {
+    image: '/static/images/brands/sse.png',
+    class: 'sse',
+    name: 'SSE',
+    link: '',
+  },
+  {
+    image: '/static/images/brands/govuk.png',
+    class: 'gov',
+    name: 'Gov.uk',
+    link: '',
+  },
+  {
+    image: '/static/images/brands/dove.png',
+    class: 'dove',
+    name: 'Dove',
+    link: '',
+  },
+  {
+    image: '/static/images/brands/nhs.png',
+    class: 'nhs',
+    name: 'NHS',
+    link: '',
+  },
+  {
+    image: '/static/images/brands/plusnet.png',
+    class: 'plusnet',
+    name: 'Plusnet',
+    link: '',
+  },
+  {
+    image: '/static/images/brands/pandg.png',
+    class: 'pandg',
+    name: 'P&G',
+    link: '',
+  },
+  {
+    image: '/static/images/brands/pampers.png',
+    class: 'pampers',
+    name: 'Pampers',
+    link: '',
+  },
+  {
+    image: '/static/images/brands/bowmore.png',
+    class: 'bowmore',
+    name: 'Bowmore',
+    link: '',
+  }
+]
