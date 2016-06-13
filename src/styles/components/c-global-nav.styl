@@ -1,66 +1,18 @@
 .c-global-nav {
-  display: none;
-  +above(m) {
-    display: block;
-  }
-  float: left;
-  font-size: $innerCore;
+  font-size: $outerCore;
   padding-left:$hspacing*2;
-  &_toggle {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 4rem;
-    height: 4rem;
-    cursor: pointer;
-    z-index: 101;
-
-    div,
-    div:before,
-    div:after {
-      content: "";
-      position: absolute;
-      right: 0;
-      height: 5px //we want this to be a fixed height;
-      width: 100%;
-      border-radius: 2px;
-      background-color: rgba(black, 0.7);
-      transition: transform .5s ease-in-out, opacity .2s ease-in-out, top .5s ease-in-out;
-    }
-
-    div {
-      top: 0;
-    }
-
-    div:before {
-      top: 9px;
-    }
-
-    div:after {
-      top: 18px;
-    }
-
-   .menu-open & {
-       div {
-         top: 9px;
-         transform: rotate(45deg);
-         &:before {
-           top: 1px;
-           transform: rotate(-90deg);
-         }
-         &:after {
-            opacity: 0;
-         }
-       }
-    }
-
-    +above(l) {
-      display: none;
-    }
+  margin-top: $vspacing*5;
+  width: 100%;
+  +above(m) {
+    float:left;
+    width: auto;
+    margin-top: 0;
+    font-size: $innerCore;
   }
-
   li {
-    display: inline-block;
+    +above(m) {
+      display: inline-block;
+    }
     a {
       display: block;
       text-transform: capitalize;

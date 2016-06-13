@@ -48,12 +48,79 @@ body {
   min-height:100vh;
 }
 
-.page-wrapper {
-  &.menu-open {
-    .main {
-        opacity: .4;
-        filter: blur(3px);
-        pointer-events: none;
-    }
+.header-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  z-index: 101;
+
+  div,
+  div:before,
+  div:after {
+    color: $light;
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 5px; //we want this to be a fixed height
+    width: 100%;
+    border-radius: 2px;
+    background-color: rgba($light, .7);
+    transition: transform .5s ease-in-out, opacity .2s ease-in-out, top .5s ease-in-out;
+  }
+
+  span {
+    position: absolute;
+    top: $vspacing*2.5;
+    transition: opacity .4s ease-in-out;
+  }
+
+  div {
+    top: 0;
+  }
+
+  div:before {
+    top: $vspacing;
+  }
+
+  div:after {
+    top: $vspacing*2;
+  }
+
+ .menu-open & {
+     div {
+       top: $vspacing*1.5;
+       transform: rotate(45deg);
+       &:before {
+         top: 1px;
+         transform: rotate(-90deg);
+       }
+       &:after {
+          opacity: 0;
+       }
+       span {
+         opacity: 0;
+       }
+     }
+  }
+
+  +above(m) {
+    display: none;
+  }
+}
+
+.wrapper {
+  transition: opacity .5s ease-in-out, filter .5s ease-in-out;
+}
+.menu-open .wrapper {
+  opacity: .4;
+  filter: blur(4px);
+  pointer-events: none;
+  +above(m) {
+    opacity: 1;
+    filter: blur(0);
+    pointer-events: all;
   }
 }

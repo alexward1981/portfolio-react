@@ -6,10 +6,13 @@
   position: absolute;
   z-index: 100;
   left: $hspacing;
+  right: $hspacing;
+  bottom: 0;
   +above(m) {
     left: $hspacing * 3;
+    bottom: $vspacing * 5;
   }
-  bottom: $vspacing * 5;
+  
   &_status-text {
     color: $light;
     font-size: $crust;
@@ -41,9 +44,17 @@
       }
     }
   }
-  div {
+  &_status-text {
     +above(m) {
-      col(1/2);
+      col(2/3);
+    }
+    +above(xl) {
+      col(1);
+    }
+  }
+  &_cta {
+    +above(m) {
+      col(1/3);
     }
     +above(xl) {
       col(1);
