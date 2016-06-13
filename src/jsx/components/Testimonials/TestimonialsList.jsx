@@ -18,8 +18,8 @@ export class TestimonialsList extends React.Component {
           <blockquote itemprop="itemReviewed" itemscope itemtype="http://schema.org/Person">
             <span class="hide" itemprop="name">Alex Ward</span>
             <div itemprop="reviewBody" dangerouslySetInnerHTML={getReview()} />
-            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <img src={item.reviewerImage} alt={item.reviewerName} itemprop="image"/>
+            <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <a href={item.reviewerProfile}><img src={item.reviewerImage} alt={item.reviewerName} itemprop="image"/></a>
               <span itemprop="name"><a href={item.reviewerProfile}>{item.reviewerName}</a></span>
               &nbsp;-&nbsp;
               <span itemprop="jobTitle">{item.reviewerTitle}</span>

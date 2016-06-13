@@ -8,15 +8,11 @@
   }
   &_content {
     img {
-      width: 100%;
-      +above('s') {
-        width: 50%;
-        float: right;
-        margin: 0;
-        margin-right: $hspacing*2;
-      }
+      display: none;
       +above(m) {
-        width: 25%;
+        span(1/6);
+        display: block;
+        float:right;
         margin-bottom: $vspacing;
       }
     }

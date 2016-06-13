@@ -3,7 +3,7 @@ import DocumentMeta from 'react-document-meta';
 import { connect } from 'react-redux';
 import { configLoad, pagesLoad } from '../../scripts/actions';
 import PageContent from '../components/PageContent.jsx';
-import TestimonialsList from '../components/testimonials/TestimonialsList.jsx';
+import TestimonialsList from '../components/Testimonials/TestimonialsList.jsx';
 
 export class Testimonials extends React.Component {
   componentWillMount() {

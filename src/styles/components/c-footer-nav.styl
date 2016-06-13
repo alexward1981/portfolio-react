@@ -1,11 +1,18 @@
 .c-global-footer-nav {
   float: left;
+  margin-left: $hspacing;
   li {
     display: inline-block;
+    &:not(:last-child) {
+      a:after {
+        content: "|";
+        margin: 0 0 0 $hspacing;
+      }
+    }
     a {
       display: block;
       text-transform: capitalize;
-      padding: 1rem;
+      padding: $vspacing ($hspacing/2);
     }
   }
 }

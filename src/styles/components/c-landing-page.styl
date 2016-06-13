@@ -10,24 +10,63 @@
     text-align: center;
     // This page uses custom header sizes
     h1 {
-      font-size: 10rem;
+      position: relative;
+      z-index: 10;
+      font-size: $crust*1.5;
+      margin-bottom: 0;
+      +above(l) {
+        font-size: 10rem;
+      }
+      @media screen and (orientation: landscape) and (max-height: 700px) {
+        & {
+          text-align: right;
+          font-size: $crust*1.5;
+          margin: $spacing*2 $spacing*2 0;
+        }
+      }
     }
     h2 {
-      font-size: 5rem;
+      position: relative;
+      z-index: 10;
+      font-size: $mantle*1.5;
+      +above(l) {
+        font-size: 5rem;
+      }
+      @media screen and (orientation: landscape) and (max-height: 700px) {
+        & {
+          text-align: right;
+          font-size: $mantle*1.5;
+          margin-right: 2rem;
+        }
+      }
     }
     img {
       position: absolute;
-      right: $hspacing;
-      bottom: $vspacing*3;
-      width: 15%;
+      margin-right: -12.5%;
+      right: 50%;
+      bottom: 29vh;
+      width: 22%;
+      z-index: 5;
+      +above(900px) {
+        width: 15%;
+        margin-right: -8%;
+        bottom: 25vh;
+      }
+      +above(xl) {
+        margin-right: 0;
+        right: $hspacing;
+        bottom: $vspacing*3;
+        span(1/5);
+      }
+      @media screen and (orientation: landscape) and (max-height: 700px) {
+        & {
+          bottom: -15vh;
+          left: 0;
+          transform:rotate(20deg);
+          width: 20%;
+        }
+      }
     }
-  }
-  .o-btn {
-    button(#92b82a);
-    margin-right: 1rem;
-  }
-  .o-btn + .o-btn {
-    button(#b0c331);
   }
   &_backdrop {
     position: absolute;

@@ -1,4 +1,8 @@
 .c-global-nav {
+  display: none;
+  +above(m) {
+    display: block;
+  }
   float: left;
   font-size: $innerCore;
   padding-left:$hspacing*2;
@@ -35,7 +39,7 @@
     div:after {
       top: 18px;
     }
-  
+
    .menu-open & {
        div {
          top: 9px;
