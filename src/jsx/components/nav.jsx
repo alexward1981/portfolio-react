@@ -10,13 +10,13 @@ export class Navigation extends React.Component {
   }
 
   render() {
-    const navigation = this.props.nav;
-    const navitems = navigation && navigation.items ? navigation.items.asMutable().map((item) => {
+    const nav = this.props.nav;
+    const navitems = nav && nav.items ? nav.items.asMutable().map((item) => {
       if(item.inNav === this.props.position || item.inNav === 'both') {
         return <li key={item._id}><Link to={item.slug}>{item.name}</Link></li>
       }
     }) : null;
-    if(navigation.isFetching) {
+    if(nav.isFetching) {
       return(
         <section class="loader">
           <span>Content is loading...</span>
