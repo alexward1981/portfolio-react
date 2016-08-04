@@ -52,7 +52,7 @@
     "gutil": "^1.6.4",
     "imagemin-pngquant": "latest",
     "jasmine-core": "^2.4.1",
-    "jeet": "^6.1.1",
+    "jeet": "6.1.1",
     "karma": "^0.13.21",
     "karma-jasmine": "^0.3.7",
     "karma-phantomjs-launcher": "^1.0.0",
