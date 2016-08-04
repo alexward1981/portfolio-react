@@ -1,6 +1,6 @@
 {
   "name": "alexward-portfolio",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "node": "4.4.5",
     "npm": "2.15.5"
@@ -50,9 +50,9 @@
     "gulp-uglify": "latest",
     "gulp-util": "^3.0.7",
     "gutil": "^1.6.4",
+    "jeet": "6.1.1",
     "imagemin-pngquant": "latest",
     "jasmine-core": "^2.4.1",
-    "jeet": "6.1.1",
     "karma": "^0.13.21",
     "karma-jasmine": "^0.3.7",
     "karma-phantomjs-launcher": "^1.0.0",
