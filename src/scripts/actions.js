@@ -3,6 +3,8 @@ import axios from "axios";
 const port = process.env.PORT || 8080
 const API_ROOT = process.env.NODE_ENV === 'production' ? 'https://alexward-portfolio.herokuapp.com/api/' : 'http://localhost:'+port+'/api/';
 
+console.log(process);
+
 // actions
 export const REQUEST_CONFIG = 'REQUEST_CONFIG';
 export const GET_CONFIG = 'GET_CONFIG';
