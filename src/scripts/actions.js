@@ -1,11 +1,7 @@
 import axios from "axios";
 
 const port = process.env.PORT || 8080
-const API_ROOT = process.env.NODE_ENV === 'production' ? 'https://alexward-portfolio.herokuapp.com/api/' : 'http://localhost:'+port+'/api/';
-
-console.log('NODE_ENV: ', config.env.NODE_ENV);
-console.log('MONGODB_URI: ', config.env.MONGODB_URI);
-console.log('ON_HEROKU: ', config.env.ON_HEROKU);
+const API_ROOT = 'https://alexward-portfolio.herokuapp.com/api/';
 
 // actions
 export const REQUEST_CONFIG = 'REQUEST_CONFIG';
