@@ -115,6 +115,16 @@ exports.pages = [
     'class' : 'skills'
   },
   {
+    'name' : 'history',
+    'title' : 'Career history | Alex Ward | London-based Creative Developer',
+    'description' : 'The career history of Alex Ward',
+    'slug' : 'history',
+    'inNav' : 'none',
+    'parent' : '',
+    'canonical' : '',
+    'class' : 'history'
+  },
+  {
     'name' : 'brands',
     'title' : 'Brands | Alex Ward | London-based Creative Developer',
     'description' : 'The brands and companies Alex Ward has worked with',
@@ -175,7 +185,18 @@ exports.pageContent = [
     pageName : 'skills',
     title: 'I know my stuff',
     subtitle: '',
-    body: '<p>My experience with the web started in 1994 when I built a dial-up Bulletin Board System, this system was not built using HTML and instead had to be coded using ASCII characters. In 1996 I progressed from BBS\'s to Websites, launching my first ever website on GeoCities. It was a dazzling array of table layouts and animated GIFS. My career only progressed from there&hellip;</p><p>Are you <em>really</em> interested in my career history?  <a href="/skills/history">If so click here to see the rest of it.</a></p><p>More than anything else, I would consider myself a UI Architect, in a nutshell this means that I\'m at my best when I\'m creating a new project from scratch. I\'m very comfortable with creating HTML and CSS from wireframes or designs, setting the coding and accessibility standards and creating an efficient build system. Ideally I would also have some influence over the UX and design process.</p><p>Outside of web development, I\'m also a fairly skilled designer and illustrator (I made this site for example), I\'m also trying to develop my 3D modelling skills as I would love to develop games for the up and coming Virtual Reality platforms such as the Oculus Rift and HTC Vive.</p>',
+    body: '<p>My experience with the web started in 1994 when I built a dial-up Bulletin Board System, this system was not built using HTML and instead had to be coded using ASCII characters. In 1996 I progressed from BBS\'s to Websites, launching my first ever website on GeoCities. It was a dazzling array of table layouts and animated GIFS. My career only progressed from there&hellip;</p><p>Are you <em>really</em> interested in my career history?  <a href="/history">If so click here to see the rest of it.</a></p><p>More than anything else, I would consider myself a UI Developer, in a nutshell this means that I\'m at my best when I\'m creating a new project from scratch. I\'m very comfortable with creating HTML and CSS from wireframes or designs, setting the coding and accessibility standards and creating an efficient build system. Ideally I would also have some influence over the UX and design process if not designing the whole thing myself.</p><p>Outside of web development, I\'m also a fairly good illustrator (I made this site for example), I\'m also trying to develop my 3D modelling skills as I would love to develop games for the up and coming Virtual Reality platforms such as the Oculus Rift and HTC Vive.</p>',
+    minime: '/static/images/alex-skills.svg',
+    minimeAlt: 'An illustration of Alex Ward',
+    buttonClass: '',
+    buttonText: '',
+    buttonUrl: ''
+  },
+  {
+    pageName : 'history',
+    title: 'I know my stuff',
+    subtitle: '',
+    body: '<p>Career history goes here</p>',
     minime: '/static/images/alex-skills.svg',
     minimeAlt: 'An illustration of Alex Ward',
     buttonClass: '',
@@ -208,7 +229,7 @@ exports.pageContent = [
     pageName : 'contact',
     title: 'Get in touch!',
     subtitle: '',
-    body: '<p>If you wish to hire me for a contract or project, please contact me either using the details below.</p><div class="details"><span><strong>Telephone:</strong> <a href="tel:02030867609" itemprop="telephone">0203 0867 609</a></span><span><strong>Email:</strong> <a href="mailto:hireme@bbqdigital.com" itemprop="email">hireme@bbqdigital.com</a></span><span><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/alexbward"> Profile</a></span><span><strong>Yuno Juno:</strong><a href="https://app.yunojuno.com/p/alexbward"> Profile</a></span><span><strong>Carrier Pigeon:</strong> No longer available</span></div><p><strong>Notice to agents:</strong><br> Please don’t contact me for permanent roles, I love contracting and no power in the \'verse will take me away from it.</p><p><a href="https://www.dropbox.com/s/arxwap21eqkw2h3/AlexWard-ContractorCV.docx?dl=0" class="btn-ico"><i class="fa fa-file-word-o tilt"></i>Download CV</a></p>',
+    body: '<p>If you wish to hire me for a consultation or project, please contact me using the details below.</p><ul class="details"><li class="tel"><strong>Telephone:</strong> <a href="tel:02030867609" itemprop="telephone">0203 0867 609</a></li><li class="email"><strong>Email:</strong> <a href="mailto:hireme@bbqdigital.com" itemprop="email">hireme@bbqdigital.com</a></li><li class="linkedin"><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/alexbward"> Profile</a></li><li class="pigeon"><strong>Carrier Pigeon:</strong> No longer available</li></ul><p class="callout"><strong>Notice to agents:</strong><br> Please don’t contact me for permanent roles, I love contracting and no power in the \'verse will take me away from it.</p><p><a href="https://www.dropbox.com/s/arxwap21eqkw2h3/AlexWard-ContractorCV.docx?dl=0" class="btn-ico"><i class="fa fa-file-word-o tilt"></i>Download CV</a></p>',
     minime: '/static/images/alex-phone.svg',
     minimeAlt: 'An illustration of Alex Ward on the phone',
     buttonClass: '',
@@ -299,17 +320,17 @@ exports.skills = [{
     {
       key: 'v234#m^&jQnuIA(2fvtX8A',
       name : 'Redux',
-      level: 2
+      level: 3
     },
     {
       key: '9%6Y5A0GR',
       name : 'Express',
-      level: 2
+      level: 3
     },
     {
       key: '9%6Y5A0GRwer',
       name : 'MongoDB',
-      level: 2
+      level: 3
     },
     {
       key: 'IjzaZT[2hl2CD!$zf',
