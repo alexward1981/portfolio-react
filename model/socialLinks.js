@@ -8,4 +8,4 @@ var SocialLinkSchema   = new Schema({
   link: String
 });
 
-module.exports = mongoose.model('socialLinks', SocialLinkSchema, 'socialLinks');
+module.exports = mongoose.model('socialLinks', SocialLinkSchema, 'APS_socialLinks');

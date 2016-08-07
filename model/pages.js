@@ -12,4 +12,4 @@ var PagesSchema   = new Schema({
     class : String
 });
 
-module.exports = mongoose.model('pages', PagesSchema, 'pages');
+module.exports = mongoose.model('pages', PagesSchema, 'APS_pages');

@@ -8,4 +8,4 @@ var BrandsSchema   = new Schema({
   link: String,
 });
 
-module.exports = mongoose.model('brands', BrandsSchema, 'brands');
+module.exports = mongoose.model('brands', BrandsSchema, 'APS_brands');

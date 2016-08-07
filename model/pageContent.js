@@ -13,4 +13,4 @@ var PageContentSchema   = new Schema({
     buttonUrl: String
 });
 
-module.exports = mongoose.model('pageContent', PageContentSchema, 'pageContent');
+module.exports = mongoose.model('pageContent', PageContentSchema, 'APS_pageContent');

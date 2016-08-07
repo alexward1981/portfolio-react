@@ -10,4 +10,4 @@ var TestimonialsSchema   = new Schema({
   reviewerImage: String
 });
 
-module.exports = mongoose.model('testimonials', TestimonialsSchema, 'testimonials');
+module.exports = mongoose.model('testimonials', TestimonialsSchema, 'APS_testimonials');

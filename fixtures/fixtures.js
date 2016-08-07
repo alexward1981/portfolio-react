@@ -7,7 +7,7 @@
  *
  **/
 
-exports.config = [{
+exports.APS_config = [{
   status: 'available',
   statusText: 'I\'m <strong>currently available</strong> for projects in the London area'
 }];
@@ -21,7 +21,7 @@ exports.config = [{
  *
  **/
 
-exports.lang = [{
+exports.APS_lang = [{
 	language: 'en-gb',
   definitions: {
   	mobileMenuLabel: 'menu',
@@ -39,7 +39,7 @@ exports.lang = [{
  *
  **/
 
-exports.socialLinks = [
+exports.APS_socialLinks = [
   {
   	label: 'Behance',
   	title: 'Check me out on Behance',
@@ -93,7 +93,7 @@ exports.socialLinks = [
  *
  **/
 
-exports.pages = [
+exports.APS_pages = [
   {
     'name' : 'home',
     'title' : 'Alex Ward | London-based Creative Developer',
@@ -169,7 +169,7 @@ exports.pages = [
  *
  **/
 
-exports.pageContent = [
+exports.APS_pageContent = [
   {
     pageName : 'home',
     title: 'Hi! I\'m Alex',
@@ -246,7 +246,7 @@ exports.pageContent = [
  *
  **/
 
-exports.skills = [{
+exports.APS_skills = [{
   levels : [
     {
       name: 'senior',
@@ -426,7 +426,7 @@ exports.skills = [{
  *
  **/
 
-exports.brands = [
+exports.APS_brands = [
   {
     image: '/static/images/brands/bandq.png',
     class: 'bandq',
@@ -493,7 +493,7 @@ exports.brands = [
  *
  **/
 
-exports.testimonials = [
+exports.APS_testimonials = [
   {
     review: '<p>Alex clearly has a great level of experience and technical knowledge and completed the task at ease. His enthusiasm and easy going attitude also made the task that much easier.</p>',
     reviewerName: 'Spencer Leah',

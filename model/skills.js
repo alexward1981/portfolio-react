@@ -18,4 +18,4 @@ var SkillsSchema   = new Schema({
   intro: String
 });
 
-module.exports = mongoose.model('skills', SkillsSchema, 'skills');
+module.exports = mongoose.model('skills', SkillsSchema, 'APS_skills');

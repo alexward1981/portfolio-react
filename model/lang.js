@@ -9,4 +9,4 @@ var LangSchema   = new Schema({
   }
 });
 
-module.exports = mongoose.model('lang', LangSchema, 'lang');
+module.exports = mongoose.model('lang', LangSchema, 'APS_lang');

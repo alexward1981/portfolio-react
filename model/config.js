@@ -7,4 +7,4 @@ var ConfigSchema   = new Schema({
   statusText: String
 });
 
-module.exports = mongoose.model('config', ConfigSchema, 'config');
+module.exports = mongoose.model('config', ConfigSchema, 'APS_config');
