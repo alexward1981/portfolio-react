@@ -89,7 +89,7 @@ body {
     top: $vspacing*2;
   }
 
- .menu-open & {
+ .menu-open-true & {
      div {
        top: $vspacing*1.5;
        transform: rotate(45deg);
@@ -114,7 +114,7 @@ body {
 .wrapper {
   transition: opacity .5s ease-in-out, filter .5s ease-in-out;
 }
-.menu-open .wrapper {
+.menu-open-true .wrapper {
   opacity: .4;
   filter: blur(4px);
   pointer-events: none;
