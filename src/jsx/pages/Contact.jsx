@@ -3,13 +3,12 @@ import DocumentMeta from 'react-document-meta';
 import { connect } from 'react-redux';
 import { configLoad, pagesLoad } from '../../scripts/actions';
 import PageContent from '../components/PageContent.jsx';
-import SkillsTableWrapper from '../components/Skills/SkillsTableWrapper.jsx';
+import ContactForm from '../components/Contact/ContactForm.jsx';
 
-export class Brands extends React.Component {
+export class Contact extends React.Component {
   componentWillMount() {
     const { dispatch } = this.props;
     dispatch(configLoad());
-    dispatch(pagesLoad('skills'));
   }
 
   render() {
@@ -38,6 +37,7 @@ export class Brands extends React.Component {
         <section class={ sectionClasses }>
           <DocumentMeta {...meta} />
           <PageContent pageName={pageName} cssclass={bemClass} />
+          <ContactForm />
         </section>
       )
     }
@@ -52,4 +52,4 @@ function select(state) {
   };
 }
 
-export default connect(select)(Brands);
+export default connect(select)(Contact);

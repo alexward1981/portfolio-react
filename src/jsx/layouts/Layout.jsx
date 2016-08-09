@@ -21,7 +21,6 @@ export default class Layout extends React.Component {
 
   forceCloseNav(event) {
     event.stopPropagation();
-    console.log('closed')
     // Don't perform checks, just set the menu visibility to false
     this.setState({mobileMenuVisible: false});
   }

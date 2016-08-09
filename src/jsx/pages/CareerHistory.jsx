@@ -3,13 +3,12 @@ import DocumentMeta from 'react-document-meta';
 import { connect } from 'react-redux';
 import { configLoad, pagesLoad } from '../../scripts/actions';
 import PageContent from '../components/PageContent.jsx';
-import SkillsTableWrapper from '../components/Skills/SkillsTableWrapper.jsx';
 
-export class Skills extends React.Component {
+export class CareerHistory extends React.Component {
   componentWillMount() {
     const { dispatch } = this.props;
     dispatch(configLoad());
-    dispatch(pagesLoad('skills'));
+    dispatch(pagesLoad('history'));
   }
 
   render() {
@@ -53,4 +52,4 @@ function select(state) {
   };
 }
 
-export default connect(select)(Skills);
+export default connect(select)(CareerHistory);
