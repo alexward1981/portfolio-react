@@ -1,0 +1,30 @@
+.c-roadmap-page {
+  pageSetup($generic)
+  a {
+    color: lighten($generic, 60%);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &_content {
+    span {
+      display: block;
+      margin-top: $hspacing*2;
+      font-size: $smallCopy;
+    }
+    img {
+      display: none;
+      +above(m) {
+        display: block;
+        width: 50%;
+        float: right;
+        margin: 0;
+        margin-right: $hspacing*2;
+      }
+      +above(m) {
+        width: 20%;
+        margin-bottom: $vspacing;
+      }
+    }
+  }
+}

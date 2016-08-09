@@ -22,7 +22,7 @@ export default class Footer extends React.Component {
         return(
           <footer class="c-global-footer">
             <div class="wrapper">
-              <Navigation postion="footer" />
+              <Navigation position="footer" />
               <div class="c-global-footer_copyright">
                 { languages.items.definitions.copyright }
               </div>

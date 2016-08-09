@@ -32,14 +32,14 @@ export class Navigation extends React.Component {
           </nav>
         )
       } else {
-        return (
-          <nav class="c-global-footer-nav">
-            <ul>
-              { navitems }
-            </ul>
-          </nav>
-        )
-      }
+          return (
+            <nav class="c-global-footer-nav">
+              <ul>
+                { navitems }
+              </ul>
+            </nav>
+          )
+        }
     }
   }
 }

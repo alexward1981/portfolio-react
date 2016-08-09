@@ -155,10 +155,10 @@ exports.APS_pages = [
     'class' : 'contact'
   },
   {
-    'name' : 'roadmap',
+    'name' : 'development roadmap',
     'title' : 'Development Roadmap | Alex Ward | London-based Creative Developer',
     'description' : 'The future plans of this website',
-    'slug' : 'development roadmap',
+    'slug' : 'roadmap',
     'inNav' : 'footer',
     'parent' : '',
     'canonical' : '',
