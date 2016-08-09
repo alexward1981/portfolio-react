@@ -3,12 +3,12 @@ import DocumentMeta from 'react-document-meta';
 import { connect } from 'react-redux';
 import { configLoad, pagesLoad } from '../../scripts/actions';
 import PageContent from '../components/PageContent.jsx';
-import ContactForm from '../components/Contact/ContactForm.jsx';
 
-export class Contact extends React.Component {
+export class Roadmap extends React.Component {
   componentWillMount() {
     const { dispatch } = this.props;
     dispatch(configLoad());
+    dispatch(pagesLoad('roadmap'));
   }
 
   render() {
@@ -22,7 +22,7 @@ export class Contact extends React.Component {
       canonical: pagesItems.canonical,
     }
 
-    var pageName = 'contact';
+    var pageName = 'roadmap';
     var pageClass = 'c-'+pageName+'-page';
     var sectionClasses = pageClass+' ' + status;
     var bemClass = pageClass + '_content';
@@ -40,6 +40,7 @@ export class Contact extends React.Component {
         </section>
       )
     }
+
   }
 }
 
@@ -51,4 +52,4 @@ function select(state) {
   };
 }
 
-export default connect(select)(Contact);
+export default connect(select)(Roadmap);

@@ -153,6 +153,16 @@ exports.APS_pages = [
     'parent' : '',
     'canonical' : '',
     'class' : 'contact'
+  },
+  {
+    'name' : 'roadmap',
+    'title' : 'Development Roadmap | Alex Ward | London-based Creative Developer',
+    'description' : 'The future plans of this website',
+    'slug' : 'development roadmap',
+    'inNav' : 'footer',
+    'parent' : '',
+    'canonical' : '',
+    'class' : 'contact'
   }
 ]
 
@@ -185,7 +195,7 @@ exports.APS_pageContent = [
     pageName : 'skills',
     title: 'I know my stuff',
     subtitle: '',
-    body: '<p>My experience with the web started in 1994 when I built a dial-up Bulletin Board System, this system was not built using HTML and instead had to be coded using ASCII characters. In 1996 I progressed from BBS\'s to Websites, launching my first ever website on GeoCities. It was a dazzling array of table layouts and animated GIFS. My career only progressed from there&hellip;</p><p>Are you <em>really</em> interested in my career history?  <a href="/history">If so click here to see the rest of it.</a></p><p>More than anything else, I would consider myself a UI Developer, in a nutshell this means that I\'m at my best when I\'m creating a new project from scratch. I\'m very comfortable with creating HTML and CSS from wireframes or designs, setting the coding and accessibility standards and creating an efficient build system. Ideally I would also have some influence over the UX and design process if not designing the whole thing myself.</p><p>Outside of web development, I\'m also a fairly good illustrator (I made this site for example), I\'m also trying to develop my 3D modelling skills as I would love to develop games for the up and coming Virtual Reality platforms such as the Oculus Rift and HTC Vive.</p>',
+    body: '<p>My experience with building User Interfaces started in 1994 when I built a dial-up Bulletin Board System, this system was not built using HTML and instead had to be coded using ASCII characters. In 1996 I progressed from BBS\'s to Websites, launching my first ever website on GeoCities. It was a dazzling array of table layouts and animated GIFS. My career only progressed from there&hellip;</p><p>More than anything else, I would consider myself a UI Developer, in a nutshell this means that I\'m at my best when I\'m creating a new project from scratch. I\'m very comfortable with creating HTML and CSS from wireframes or designs, setting the coding and accessibility standards and creating an efficient build system. Ideally I would also have some influence over the UX and design process if not designing the whole thing myself.</p>',
     minime: '/static/images/alex-skills.svg',
     minimeAlt: 'An illustration of Alex Ward',
     buttonClass: '',
@@ -196,8 +206,19 @@ exports.APS_pageContent = [
     pageName : 'history',
     title: 'I know my stuff',
     subtitle: '',
-    body: '<p>Career history goes here</p>',
+    body: '<p>My experience with building User Interfaces started in 1994 when I built a dial-up Bulletin Board System, this system was not built using HTML and instead had to be coded using ASCII characters. In 1996 I progressed from BBS\'s to Websites, launching my first ever website on GeoCities. It was a dazzling array of table layouts and animated GIFS. My career only progressed from there&hellip;</p>',
     minime: '/static/images/alex-skills.svg',
+    minimeAlt: 'An illustration of Alex Ward',
+    buttonClass: '',
+    buttonText: '',
+    buttonUrl: ''
+  },
+  {
+    pageName : 'roadmap',
+    title: 'Development Roadmap',
+    subtitle: 'This site is currently in Phase Two',
+    body: '<p>Thanks for taking a look at my website, I hope you like what you see. To make things a little easier for you to check through, the JavaScript and CSS is not minified, whereas it would obviously normally be compressed to high-hell!</p><p>The goal of this website is not only to showcase my abilities but also to help me develop more advanced skills.</p><p>At the moment, the site is in phase two, here the flat HTML site from phase one has been ported into a React/Redux framework and the data has been added to a mongodb instance, I\'ve also done some work in refining the look and feel.</p><p>Subsequent phases will consist of the following:</p><ul><li>SVG animations</li><li>JavaScript animations</li><li>An updated layout</li><li>A contact form</li><li>An integrated blog</li><li>Even more refined illustrations</li><li>More content</li><li>A Portfolio section</li><li>a real-live Red Panda for every reader*</li></ul><span>*maybe</span>',
+    minime: '/static/images/alex-available.svg',
     minimeAlt: 'An illustration of Alex Ward',
     buttonClass: '',
     buttonText: '',

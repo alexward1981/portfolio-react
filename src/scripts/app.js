@@ -12,6 +12,7 @@ import Layout from '../jsx/layouts/Layout.jsx';
 import Index from '../jsx/pages/Index.jsx';
 import Skills from '../jsx/pages/Skills.jsx';
 import CareerHistory from '../jsx/pages/CareerHistory.jsx';
+import Roadmap from '../jsx/pages/Roadmap.jsx';
 import Brands from '../jsx/pages/Brands.jsx';
 import Testimonials from '../jsx/pages/Testimonials.jsx';
 import Contact from '../jsx/pages/Contact.jsx';
@@ -32,6 +33,7 @@ ReactDOM.render(
        <IndexRoute component={Index}></IndexRoute>
        <Route path="skills" component={Skills}></Route>
        <Route path="history" component={CareerHistory}></Route>
+       <Route path="roadmap" component={Roadmap}></Route>
        <Route path="brands" component={Brands}></Route>
        <Route path="testimonials" component={Testimonials}></Route>
        <Route path="contact" component={Contact}></Route>
