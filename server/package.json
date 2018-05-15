@@ -1,12 +1,13 @@
 {
-  "name": "graphql",
+  "name": "server",
   "version": "1.0.0",
-  "description": "The graphql layer for my portfolio site",
+  "description": "The server layer for my portfolio site",
   "main": "server.js",
   "author": "Alex Foxleigh",
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "cors": "^2.8.4",
     "express": "^4.16.3",
     "express-graphql": "^0.6.12",
     "graphql": "^0.13.2",

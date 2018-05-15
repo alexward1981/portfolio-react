@@ -1,26 +1,21 @@
-var express = require('express');
-var graphqlHTTP = require('express-graphql');
-var { buildSchema } = require('graphql');
+const express = require("express");
+const mongoose = require('./config/mongoose');
+const graphqlHTTP = require("express-graphql");
+const cors = require("cors");
+const db = mongoose();
+const app = express();
 
-// Construct a schema, using GraphQL schema language
-var schema = buildSchema(`
-  type Query {
-    hello: String
-  }
-`);
+app.use('*', cors());
 
-// The root provides a resolver function for each API endpoint
-var root = {
-  hello: () => {
-    return 'Hello world!';
-  },
-};
+const configSchema = require('./graphql/index').configSchema;
 
-var app = express();
-app.use('/graphql', graphqlHTTP({
-  schema: schema,
-  rootValue: root,
-  graphiql: true,
+app.use('/graphql', cors(), graphqlHTTP({
+  schema: configSchema,
+  rootValue: global,
+  graphiql: true
 }));
-app.listen(4000);
-console.log('Running a GraphQL API server at localhost:4000/graphql');
+
+// Up and Running at Port 4000
+app.listen(process.env.PORT || 4000, () => {
+  console.log('A GraphQL API running at http://localhost:4000');
+});
