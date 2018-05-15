@@ -9,9 +9,6 @@ exports.configType = new GraphQLObjectType({
   name: 'config',
   fields: function () {
     return {
-      id: {
-        type: new GraphQLNonNull(GraphQLID)
-      },
       status: {
         type: GraphQLString
       }
