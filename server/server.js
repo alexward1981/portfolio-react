@@ -12,16 +12,16 @@ const app = express();
 app.use('*', cors());
 
 // import schemas
-const configSchema = require('./graphql/index').configSchema;
+const appSchema = require('./graphql/index').appSchema;
 
 // Set up schemas with Express endpoint
 app.use('/graphql', cors(), graphqlHTTP({
-  schema: configSchema,
+  schema: appSchema,
   rootValue: global,
   graphiql: true
 }));
 
 // Up and Running at Port 4000
 app.listen(process.env.PORT || 4000, () => {
-  console.log('A GraphQL API running at http://localhost:4000');
+  console.log('A GraphQL API running at http://localhost:4000/graphql');
 });

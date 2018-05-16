@@ -1,28 +1,30 @@
 
 var GraphQLObjectType = require('graphql').GraphQLObjectType;
-var GraphQLNonNull = require('graphql').GraphQLNonNull;
 var GraphQLBoolean = require('graphql').GraphQLBoolean;
-var GraphQLList = require('graphql').GraphQLList;
-var GraphQLID = require('graphql').GraphQLID;
 var GraphQLString = require('graphql').GraphQLString;
 
-// Config Type
-exports.configType = new GraphQLObjectType({
-  name: 'config',
-  fields: function () {
+exports.socialNetworksType = new GraphQLObjectType({
+  name: 'socialNetworks',
+  fields: function() {
     return {
-      status: {
+      name: {
         type: GraphQLString
       },
-      available_from: {
+      icon_class: {
         type: GraphQLString
       },
-      special_message: {
+      username: {
         type: GraphQLString
       },
-      CV_URL: {
+      profile_url: {
         type: GraphQLString
+      },
+      cta: {
+        type: GraphQLString
+      },
+      active: {
+        type: GraphQLBoolean
       }
     }
   }
-});
+})
