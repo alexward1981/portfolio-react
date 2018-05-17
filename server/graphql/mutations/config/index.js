@@ -10,17 +10,18 @@ exports.update = {
   args: {
     configUpdate: { type: ConfigType.configInputType }
   },
-  resolve(root, { configUpdate }, params) {
+  resolve(root, { configUpdate }) {
     return ConfigModel.findOneAndUpdate(
+      {"_id": "5afaf49ab10a8da744ea6a00" },
       { 
-        status: params.status,
-        available_from: params.available_from,
-        special_message: params.special_message,
-        CV_URL: params.CV_URL,
+        status: configUpdate.status,
+        available_from: configUpdate.available_from,
+        special_message: configUpdate.special_message,
+        CV_URL: configUpdate.CV_URL,
       },
       { new: true }
-    )
-      .catch(err => new Error(err));
+    ).exec()
+    .catch(err => new Error(err));
   }
 }
 
