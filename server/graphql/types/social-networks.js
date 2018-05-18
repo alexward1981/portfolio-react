@@ -1,4 +1,5 @@
 var GraphQLObjectType = require('graphql').GraphQLObjectType
+var GraphQLInputObjectType = require('graphql').GraphQLInputObjectType
 var GraphQLBoolean = require('graphql').GraphQLBoolean
 var GraphQLString = require('graphql').GraphQLString
 
@@ -31,5 +32,10 @@ let dataShape = {
 
 exports.socialNetworksType = new GraphQLObjectType({
   name: 'socialNetworks',
+  fields: () => dataShape
+})
+
+exports.socialNetworksInputType = new GraphQLInputObjectType({
+  name: 'socialNetworksInputType',
   fields: () => dataShape
 })

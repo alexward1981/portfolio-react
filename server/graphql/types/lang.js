@@ -29,6 +29,8 @@ var definitionsInputType = new GraphQLInputObjectType({
   fields: () => childDataShape
 })
 
+// REFACTOR: Too many data shapes and not very DRY.
+
 var dataShape = {
   language: {
     type: GraphQLString,
@@ -64,8 +66,7 @@ var langInputType = new GraphQLInputObjectType({
 })
 
 module.exports = {
-definitionsType,
-definitionsInputType,
-langType,
-langInputType
-}
+  definitionsType,
+  definitionsInputType,
+  langType,
+langInputType}

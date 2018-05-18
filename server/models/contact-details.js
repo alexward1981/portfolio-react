@@ -7,6 +7,7 @@ var c = 'ContactDetails'
 var ContactDetails = new Schema({
   name: String,
   value: String,
+  url: String,
   active: Boolean
 })
 
