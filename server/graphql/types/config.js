@@ -17,7 +17,7 @@ var dataShape = {
   },
   special_message: {
     type: GraphQLString,
-    description: 'Sometimes it makes sense to add a little note to the page (e.g. `Taking a break from contracting, right now, I\'ll be back in a few months)' 
+    description: "Sometimes it makes sense to add a little note to the page (e.g. `Taking a break from contracting, right now, I'll be back in a few months)"
   },
   CV_URL: {
     type: GraphQLString,
