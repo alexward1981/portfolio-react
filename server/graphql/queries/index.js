@@ -6,6 +6,8 @@ var configQuery = require('./config').queryType
 var contactDetailsQuery = require('./contact-details').queryType
 var socialNetworksQuery = require('./social-networks').queryType
 var skillsQuery = require('./skills').queryType
+var brandsQuery = require('./brands').queryType
+var langQuery = require('./lang').queryType
 
 // Query
 exports.queryType = new GraphQLObjectType({
@@ -17,7 +19,8 @@ exports.queryType = new GraphQLObjectType({
       contact_details: contactDetailsQuery,
       social_networks: socialNetworksQuery,
       skills: skillsQuery,
-      brands: brandsQuery
+      brands: brandsQuery,
+      lang: langQuery,
     }
   }
 })
