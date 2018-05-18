@@ -38,13 +38,13 @@ var dataShape = {
   }
 }
 
-// Skills Type
+// Brands Type
 exports.brandsType = new GraphQLObjectType({
   name: 'brands',
   fields: () => dataShape
 })
 
-// Skills Input Type
+// Brands Input Type
 exports.brandsInputType = new GraphQLInputObjectType({
   name: 'brandsInputType',
   fields: () => dataShape

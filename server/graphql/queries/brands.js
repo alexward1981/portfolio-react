@@ -4,7 +4,7 @@ var BrandsType = require('../types/brands').brandsType
 
 // Query
 exports.queryType = {
-  type: new GraphQLList(GrandsType),
+  type: new GraphQLList(BrandsType),
   description: 'The brands I have worked for',
   resolve: function () {
     const brands = BrandsModel.find()
