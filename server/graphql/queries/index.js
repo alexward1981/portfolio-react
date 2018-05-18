@@ -16,7 +16,8 @@ exports.queryType = new GraphQLObjectType({
       config: configQuery,
       contact_details: contactDetailsQuery,
       social_networks: socialNetworksQuery,
-      skills: skillsQuery
+      skills: skillsQuery,
+      brands: brandsQuery
     }
   }
 })
