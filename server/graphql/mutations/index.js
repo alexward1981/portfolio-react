@@ -4,7 +4,7 @@ var config = require('./config')
 var lang = require('./lang')
 var skills = require('./skills')
 var brands = require('./brands')
-
+var socialNetworks = require('./social-networks')
 
 exports.mutationType = new GraphQLObjectType({
   name: 'Mutation',
@@ -18,7 +18,10 @@ exports.mutationType = new GraphQLObjectType({
       removeSkill: skills.remove,
       addBrand: brands.add,
       updateBrand: brands.update,
-      removeBrand: brands.remove
+      removeBrand: brands.remove,
+      addSocialNetwork: socialNetworks.add,
+      updateSocialNetwork: socialNetworks.update,
+      removeSocialNetwork: socialNetworks.remove,
     }
   }
 })
