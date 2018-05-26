@@ -1,7 +1,9 @@
-#Alex Ward Portfolio - React version
+[![deprecated](http://badges.github.io/stability-badges/dist/deprecated.svg)](http://github.com/badges/stability-badges)
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
-[![Build Status](https://travis-ci.org/alexward1981/portfolio-react.svg?branch=master)](https://travis-ci.org/alexward1981/portfolio-react)
-[![Dependency Status](https://gemnasium.com/alexward1981/portfolio-react.svg)](https://gemnasium.com/alexward1981/portfolio-react)
+This project is no longer maintained, please visit https://github.com/foxleigh81/alex-foxleigh-portfolio for the latest version.
+
+#Alex Ward Portfolio - React version
 
 ##Introduction
 My personal website, built using React, Redux, MongoDB and Webpack if you wish to review the code, it can be found at https://github.com/alexward1981/portfolio-react
